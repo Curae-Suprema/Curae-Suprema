@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26456801670",
+    "project_id": "katyramashay-dc49e",
+    "storage_bucket": "katyramashay-dc49e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26456801670:android:3cb382dad319ff46242c07",
+        "android_client_info": {
+          "package_name": "com.example.katyramashay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26456801670-fbdftg967havm3u93f5b2trg2agl2glk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVLivIB1_B3iQeBcoj8BQXZloSVfC81Xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26456801670-fbdftg967havm3u93f5b2trg2agl2glk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
