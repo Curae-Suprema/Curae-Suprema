@@ -17,7 +17,7 @@ public class Patient {
     private String lastName;
     private LocalDate birthday;
     private String location;
-    private Calendar calendar;
+    private ArrayList<Day> days;
     private ArrayList<String> medications;
     private ArrayList<String> allergies;
 
@@ -29,10 +29,10 @@ public class Patient {
         middleName = "";
         lastName = "";
         birthday = LocalDate.now();
-        // not sure how to initialize calendar
+        days = new ArrayList<>();
         location = "";
-        medications = new ArrayList<String>();
-        allergies = new ArrayList<String>();
+        medications = new ArrayList<>();
+        allergies = new ArrayList<>();
     }
 
     // methods
@@ -74,11 +74,17 @@ public class Patient {
         return location;
     }
 
-    /*
-    public Calendar getCalendar()
-    public void addYear(Year y)
-    */
+    public void addDay(Day day) {
+        days.add(day);
+    }
 
+    public Day getDay(String date) {
+        for (int i = 0; i < days.size(); i++) {
+            if (date.equals(days.get(i).getDate()))
+                return days.get(i);
+        }
+        return null;
+    }
 
     public ArrayList<String> getMedications() {
         return medications;
