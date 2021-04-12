@@ -2,7 +2,6 @@ package com.example.katyramashay;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import static java.text.DateFormat.getDateInstance;
 
 public class Day {

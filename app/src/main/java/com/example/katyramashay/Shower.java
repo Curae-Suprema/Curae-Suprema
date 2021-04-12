@@ -1,37 +1,32 @@
 package com.example.katyramashay;
 
-import android.os.Build;
 
-import androidx.annotation.RequiresApi;
+public class Shower extends Task {
 
-import java.time.Instant;
-
-public class Shower {
-    // instance methods
-    private boolean completed;
-    private Instant timeStamp;
+    // instance variables
+    private int length;
+    private int temperature;
 
     // constructors
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public Shower(){
-        completed = false;
-        timeStamp = Instant.now();
+    public Shower() {
+        length = 0;
+        temperature = 0;
     }
 
-    //methods
-    public boolean isCompleted() {
-        return completed;
+    public int getLength() {
+        return length;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
+    public void setLength(int length) {
+        this.length = length;
     }
 
-    public Instant getTimeStamp() {
-        return timeStamp;
+    public int getTemperature() {
+        return temperature;
     }
 
-    public void setTimeStamp(Instant timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
     }
+
 }

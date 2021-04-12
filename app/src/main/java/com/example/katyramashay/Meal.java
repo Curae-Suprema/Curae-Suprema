@@ -21,17 +21,45 @@ public class Meal extends Task{
     }
 
     // methods
-    public boolean getVegetables() { return vegetables; }
-    public void setVegetables(boolean b) { vegetables = b; }
+    public boolean getVegetables() {
+        return vegetables;
+    }
 
-    public boolean getGrains() { return grains; }
-    public void setGrains(boolean b) { grains = b; }
-    public boolean getDairy() {return dairy; }
-    public void setDairy(boolean b) { dairy = b; }
-    public boolean getFruits() { return fruits; }
-    public void setFruits(boolean b) { fruits = b; }
-    public boolean getProtein() { return protein; }
-    public void setProtein(boolean b) { protein = b; }
+    public void setVegetables(boolean b) {
+        vegetables = b;
+    }
+
+    public boolean getGrains() {
+        return grains;
+    }
+
+    public void setGrains(boolean b) {
+        grains = b;
+    }
+
+    public boolean getDairy() {
+        return dairy;
+    }
+
+    public void setDairy(boolean b) {
+        dairy = b;
+    }
+
+    public boolean getFruits() {
+        return fruits;
+    }
+
+    public void setFruits(boolean b) {
+        fruits = b;
+    }
+
+    public boolean getProtein() {
+        return protein;
+    }
+
+    public void setProtein(boolean b) {
+        protein = b;
+    }
 
     @Override
     public String toString() {
@@ -45,20 +73,20 @@ public class Meal extends Task{
         if (fruits)
             s += "Fruits, ";
         if (protein)
-            s += "Protein";
-        return s;
+            s += "Protein, ";
+        return s.substring(0, s.length() - 1);
     }
 
     public ArrayList<String> toArrayList(){
         ArrayList<String> s = new ArrayList<String>();
         if (vegetables)
-            s.add("Vegetables, ");
+            s.add("Vegetables");
         if (grains)
-            s.add("Grains, ");
+            s.add("Grains");
         if (dairy)
-            s.add("Dairy, ");
+            s.add("Dairy");
         if (fruits)
-            s.add("Fruits, ");
+            s.add("Fruits");
         if (protein)
             s.add("Protein");
         return s;
