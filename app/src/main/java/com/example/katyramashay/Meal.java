@@ -37,13 +37,13 @@ public class Meal extends Task{
     public String toString() {
         String s = "";
         if (vegetables)
-            s += "Vegetables, ";
+            s += " Vegetables, ";
         if (grains)
-            s += "Grains";
+            s += "Grains, ";
         if (dairy)
-            s += "Dairy";
+            s += "Dairy, ";
         if (fruits)
-            s += "Fruits";
+            s += "Fruits, ";
         if (protein)
             s += "Protein";
         return s;
@@ -54,11 +54,11 @@ public class Meal extends Task{
         if (vegetables)
             s.add("Vegetables, ");
         if (grains)
-            s.add("Grains");
+            s.add("Grains, ");
         if (dairy)
-            s.add("Dairy");
+            s.add("Dairy, ");
         if (fruits)
-            s.add("Fruits");
+            s.add("Fruits, ");
         if (protein)
             s.add("Protein");
         return s;
