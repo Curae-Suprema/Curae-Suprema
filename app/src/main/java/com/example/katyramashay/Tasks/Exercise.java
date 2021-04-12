@@ -1,4 +1,4 @@
-package com.example.katyramashay;
+package com.example.katyramashay.Tasks;
 
 public class Exercise extends Task {
 
