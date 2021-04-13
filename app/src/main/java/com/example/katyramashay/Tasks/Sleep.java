@@ -2,7 +2,7 @@ package com.example.katyramashay.Tasks;
 
 public class Sleep extends Task {
 
-    private int quality; // scale from 1 to 10
+    private int quality; // scale from 1 to 10?
     private int lengthMin;
     private int lengthHours;
 
