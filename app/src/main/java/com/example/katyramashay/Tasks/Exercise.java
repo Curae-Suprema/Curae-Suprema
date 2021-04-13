@@ -25,7 +25,10 @@ public class Exercise extends Task {
     }
 
     public void setLengthMin(int min) {
-        lengthMin = min;
+        double n = min / 60.0;
+        if (min >= 60)
+            lengthHours += min / 60;
+        lengthMin = min % 60;
     }
 
     public int getLengthHours() {
