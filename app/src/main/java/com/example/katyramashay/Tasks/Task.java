@@ -3,23 +3,22 @@ package com.example.katyramashay.Tasks;
 import java.util.Calendar;
 
 public class Task {
-    // instance variables
 
     private String taskName;
     private boolean completion;
     private Calendar reminder;
     private String notes;
-
-    // constructor
+    private int lengthMin;
+    private int lengthHours;
 
     public Task() {
         taskName = "";
         completion = false;
         reminder = Calendar.getInstance();
         notes = "";
+        lengthMin = 0;
+        lengthHours = 0;
     }
-
-    // methods
 
     public String getTaskName() {
         return taskName;
@@ -52,5 +51,24 @@ public class Task {
 
     public void setNotes(String newNotes) {
         notes = newNotes;
+    }
+
+    public int getLengthMin() {
+        return lengthMin;
+    }
+
+    public void setLengthMin(int min) {
+        double n = min / 60.0;
+        if (min >= 60)
+            lengthHours += min / 60;
+        lengthMin = min % 60;
+    }
+
+    public int getLengthHours() {
+        return lengthHours;
+    }
+
+    public void setLengthHours(int hours) {
+        lengthHours = hours;
     }
 }
