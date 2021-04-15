@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">KatyRamaShay</string>
+    <string name="firstNameStr">First Name</string>
+    <string name="middleNameStr">Middle Name</string>
+    <string name="lastNameStr">Last Name</string>
+    <string name="headerLabelStr">Create Account</string>
+    <string name="hintFirstName">Enter first name</string>
+    <string name="hintMiddleName">Enter middle name</string>
+    <string name="hintLastName">Enter last name</string>
+    <string name="dateOfBirthStr">(mm/dd/yyyy)</string>
+    <string name="dateOfBirthLabel">Date of Birth</string>
+    <string name="hintLocation">Room number, suite, apartment, etc.</string>
+    <string name="locationLabel">Address</string>
 </resources>
