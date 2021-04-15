@@ -11,4 +11,5 @@
     <string name="dateOfBirthLabel">Date of Birth</string>
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
+
 </resources>
