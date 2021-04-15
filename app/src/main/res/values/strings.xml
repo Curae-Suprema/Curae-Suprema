@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KatyRamaShay</string>
+    <string name="activityLogTitleStr">Activity Log</string>
 </resources>
