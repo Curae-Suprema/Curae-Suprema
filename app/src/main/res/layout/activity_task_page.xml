@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/open_sans"
             android:gravity="center"
-            android:text="@string/activityLogTitleStr"
+            android:text="@string/taskPageTitleStr"
             android:textColor="@color/black"
             android:textSize="36sp"
             android:textStyle="bold" />
