@@ -30,7 +30,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
-        app:srcCompat="@drawable/showerIcon" />
+        app:srcCompat="@drawable/showericon" />
 
     <ImageButton
         android:id="@+id/mealsButton"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
-        app:srcCompat="@drawable/mealsIcon" />
+        app:srcCompat="@drawable/mealsicon" />
 
     <ImageButton
         android:id="@+id/sleepButton"
@@ -57,7 +57,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showerButton"
-        app:srcCompat="@drawable/sleepIcon" />
+        app:srcCompat="@drawable/sleepicon" />
 
     <ImageButton
         android:id="@+id/exerciseButton"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealsButton"
-        app:srcCompat="@drawable/exerciseIcon" />
+        app:srcCompat="@drawable/exerciseicon" />
 
     <ImageButton
         android:id="@+id/peopleButton"
@@ -84,7 +84,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleepButton"
-        app:srcCompat="@drawable/peopleIcon" />
+        app:srcCompat="@drawable/peopleicon" />
 
     <ImageButton
         android:id="@+id/newTaskButton"
@@ -98,6 +98,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exerciseButton"
-        app:srcCompat="@drawable/newTaskIcon" />
+        app:srcCompat="@drawable/newtaskicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
