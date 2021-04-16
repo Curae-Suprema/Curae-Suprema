@@ -13,4 +13,11 @@
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
 
+    <string name="showerButtonDescriptor">Shower button</string>
+    <string name="mealsButtonDescriptor">Meals button</string>
+    <string name="sleepButtonDescriptor">Sleep button</string>
+    <string name="exerciseButtonDescriptor">Exercise button</string>
+    <string name="peopleButtonDescriptor">People button</string>
+    <string name="newTaskButtonDescriptor">New task button</string>
+
 </resources>
