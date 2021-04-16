@@ -2,17 +2,202 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" >
+
+
+        <TextView
+            android:id="@+id/headerLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/headerLabelStr"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:paddingRight="90dp"
+            android:paddingStart="160dp"
+            android:paddingEnd="90dp" />
+
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="4"
+            android:paddingTop="20dp"
+            android:text="@string/firstNameStr"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="100dp" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:clickable="false"
+            android:ems="7"
+            android:hint="@string/hintFirstName"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/middleNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/middleNameStr"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="100dp" />
+
+        <EditText
+            android:id="@+id/middleName"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:clickable="false"
+            android:ems="10"
+            android:hint="@string/hintMiddleName"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/lastNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastNameStr"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingEnd="100dp"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/hintLastName"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/dateOfBirthLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateOfBirthLabel"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingEnd="100dp"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/dateOfBirthStr"
+            android:inputType="date" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/locationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/locationLabel"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingEnd="100dp"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/hintLocation"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:paddingTop="50dp"
+            android:id="@+id/allergiesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/allergiesLabelStr"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingEnd="100dp"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/allergiesStr"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/medicationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medicationLabelStr"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="100dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="100dp" />
+
+        <EditText
+            android:id="@+id/medication"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/medicationStr"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

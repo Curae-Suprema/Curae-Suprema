@@ -12,6 +12,10 @@
     <string name="dateOfBirthLabel">Date of Birth</string>
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
+    <string name="allergiesLabelStr">Allergies</string>
+    <string name="allergiesStr">Nuts, dust, gluten, etc.</string>
+    <string name="medicationLabelStr">Medications</string>
+    <string name="medicationStr">Medication A, medication B, medication C, etc.</string>
     <string name="showerButtonDescriptor">Shower button</string>
     <string name="mealsButtonDescriptor">Meals button</string>
     <string name="sleepButtonDescriptor">Sleep button</string>
