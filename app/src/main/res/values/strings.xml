@@ -12,7 +12,6 @@
     <string name="dateOfBirthLabel">Date of Birth</string>
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
-
     <string name="showerButtonDescriptor">Shower button</string>
     <string name="mealsButtonDescriptor">Meals button</string>
     <string name="sleepButtonDescriptor">Sleep button</string>
