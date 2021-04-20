@@ -42,7 +42,6 @@
         android:contentDescription="@string/mealsButtonDescriptor"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
         app:srcCompat="@drawable/mealsicon" />
 
@@ -69,7 +68,6 @@
         android:contentDescription="@string/exerciseButtonDescriptor"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealsButton"
         app:srcCompat="@drawable/exerciseicon" />
 
@@ -96,7 +94,6 @@
         android:contentDescription="@string/newTaskButtonDescriptor"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exerciseButton"
         app:srcCompat="@drawable/newtaskicon" />
 
