@@ -23,14 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:paddingStart="160dp"
+            android:paddingLeft="170dp"
+            android:paddingEnd="90dp"
+            android:paddingRight="90dp"
             android:text="@string/headerLabelStr"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="36sp"
-            android:textStyle="bold"
-            android:paddingLeft="160dp"
-            android:paddingRight="90dp"
-            android:paddingStart="160dp"
-            android:paddingEnd="90dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/firstNameLabel"
@@ -38,14 +38,14 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:ems="4"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
             android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/firstNameStr"
             android:textColor="#000000"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="100dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/firstName"
@@ -60,17 +60,17 @@
             android:textColor="@color/white" />
 
         <TextView
-            android:paddingTop="20dp"
             android:id="@+id/middleNameLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/middleNameStr"
             android:textColor="#000000"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="100dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/middleName"
@@ -84,17 +84,17 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:paddingTop="20dp"
             android:id="@+id/lastNameLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/lastNameStr"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingEnd="100dp"
-            android:paddingStart="15dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/lastName"
@@ -107,17 +107,17 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:paddingTop="20dp"
             android:id="@+id/dateOfBirthLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/dateOfBirthLabel"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingEnd="100dp"
-            android:paddingStart="15dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/dateOfBirth"
@@ -130,17 +130,17 @@
             android:inputType="date" />
 
         <TextView
-            android:paddingTop="20dp"
             android:id="@+id/locationLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/locationLabel"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingEnd="100dp"
-            android:paddingStart="15dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/location"
@@ -153,17 +153,17 @@
             android:inputType="textPersonName"/>
 
         <TextView
-            android:paddingTop="50dp"
             android:id="@+id/allergiesLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="50dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/allergiesLabelStr"
             android:textColor="#000000"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingEnd="100dp"
-            android:paddingStart="15dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/allergies"
@@ -176,17 +176,17 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:paddingTop="20dp"
             android:id="@+id/medicationLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="100dp"
+            android:paddingRight="100dp"
             android:text="@string/medicationLabelStr"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="100dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="100dp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/medication"

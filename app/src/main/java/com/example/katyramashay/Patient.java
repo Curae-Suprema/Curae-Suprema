@@ -1,9 +1,11 @@
 package com.example.katyramashay;
 
+/**
+ * this class is to model the behavior of a patient
+ */
+
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import com.example.katyramashay.Tasks.Day;
 
 import java.time.LocalDate;
@@ -11,8 +13,7 @@ import java.util.ArrayList;
 
 public class Patient {
 
-    // instance variables
-
+    //DATA
     private String firstName;
     private String middleName;
     private String lastName;
@@ -22,8 +23,13 @@ public class Patient {
     private ArrayList<String> medications;
     private ArrayList<String> allergies;
 
-    // constructors
 
+    //CONSTRUCTOR
+
+    /**
+     * creates the default constructor by setting all strings to be empty,
+     * DOB to a default date, and arrayLists with empty strings
+     */
     @RequiresApi(api = Build.VERSION_CODES.O)
     public Patient() {
         firstName = "";
@@ -36,33 +42,70 @@ public class Patient {
         allergies = new ArrayList<>();
     }
 
-    // methods
+    //METHODS
 
+    /**
+     * sets the first name to a user-specified full first name
+     * @param fName the user's full first name
+     */
     public void setFirstName(String fName) {
         firstName = fName;
     }
+
+    /**
+     * gets the first name of the user
+     * @return the first name of the user
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * gets the middle name of the user
+     * @return the user's full middle name
+     */
     public String getMiddleName() {
         return middleName;
     }
+
+    /**
+     * sets the middle name to a user-specified full middle name
+     * @param mName the middle name of the user
+     */
     public void setMiddleName(String mName) {
         middleName = mName;
     }
 
+    /**
+     * gets the last name of the user
+     * @return the user's full last name
+     */
     public String getLastName() {
         return lastName;
     }
+
+    /**
+     * sets the last name to a user-specified full last name
+     * @param lName the last name of the user
+     */
     public void setLastName(String lName) {
         lastName = lName;
     }
 
+    /**
+     * gets the user's birth date
+     * @return the user's DOB
+     */
     public LocalDate getBirthday() {
         return birthday;
     }
 
+    /**
+     *
+     * @param month
+     * @param day
+     * @param year
+     */
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void setBirthday(int month, int day, int year) {
         birthday = LocalDate.of(year, month, day);

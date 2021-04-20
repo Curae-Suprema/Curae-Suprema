@@ -1,20 +1,41 @@
 package com.example.katyramashay.Tasks;
 
+/**
+ * this class models whether or not the patient took a shower
+ */
 
 public class Shower extends Task {
 
-    private int temperature;
+    //DATA
+    private boolean completion;
 
+
+    //CONSTRUCTOR
+
+    /**
+     * creates the default constructor and sets completion to false
+     */
     public Shower() {
-        temperature = 0;
+        completion = false;
     }
 
-    public int getTemperature() {
-        return temperature;
+
+    //METHODS
+
+    /**
+     * gets whether or not the user took a shower
+     * @return the completion status
+     */
+    public boolean getCompletion() {
+        return completion;
     }
 
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
+    /**
+     * sets the shower completion to a user-specified status
+     * @param completion whether or not a shower was taken
+     */
+    public void setCompletion(boolean completion) {
+        this.completion = completion;
     }
 
 }
