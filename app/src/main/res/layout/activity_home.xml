@@ -2,17 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ActivityTaskPageConstraintLayout"
+    android:id="@+id/HomePageConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TaskPage">
 
     <TextView
-        android:id="@+id/taskPageTitle"
-        android:layout_width="wrap_content"
+        android:id="@+id/welcomeHomePage"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="@string/taskPageTitleStr"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/welcomeHomePageStr"
         android:textColor="#000000"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -21,89 +26,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/showerButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
+    <TextView
+        android:id="@+id/dateHomePage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/showerButtonDescriptor"
-        android:scaleType="fitCenter"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/dateHomePageStr"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
-        app:srcCompat="@drawable/showericon" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeHomePage" />
 
-    <ImageButton
-        android:id="@+id/mealsButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
+    <TextView
+        android:id="@+id/completionHomePage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/mealsButtonDescriptor"
-        android:scaleType="fitCenter"
+        android:gravity="center_horizontal"
+        android:text="@string/completionHomePageStr"
+        android:textColor="#000000"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
-        app:srcCompat="@drawable/mealsicon" />
-
-    <ImageButton
-        android:id="@+id/sleepButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/sleepButtonDescriptor"
-        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/showerButton"
-        app:srcCompat="@drawable/sleepicon" />
-
-    <ImageButton
-        android:id="@+id/exerciseButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/exerciseButtonDescriptor"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mealsButton"
-        app:srcCompat="@drawable/exerciseicon" />
-
-    <ImageButton
-        android:id="@+id/peopleButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/peopleButtonDescriptor"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sleepButton"
-        app:srcCompat="@drawable/peopleicon" />
-
-    <ImageButton
-        android:id="@+id/newTaskButton"
-        android:layout_width="250dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/newTaskButtonDescriptor"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exerciseButton"
-        app:srcCompat="@drawable/newtaskicon" />
+        app:layout_constraintTop_toBottomOf="@+id/dateHomePage" />
 
     <LinearLayout
         android:id="@+id/NavigationBar"
@@ -127,7 +83,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/taskNavBarDescriptor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/tasknavbarselected" />
+            app:srcCompat="@drawable/tasknavbar" />
 
         <ImageButton
             android:id="@+id/dailyLogNavBarButton"
@@ -147,7 +103,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/homeNavBarDescriptor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/homenavbar" />
+            app:srcCompat="@drawable/homenavbarselected" />
 
         <ImageButton
             android:id="@+id/medicineNavBarButton"

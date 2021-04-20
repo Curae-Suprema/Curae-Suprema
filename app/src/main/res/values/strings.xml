@@ -31,7 +31,7 @@
     <!-- New Task Page Strings -->
     <string name="newTaskPageTitleStr">New Task</string>
     <string name="backButtonDescriptionStr">Back button to return to activity log page</string>
-    <string name="nameOfTaskHintStr">Name of task...</string>
+    <string name="nameOfTaskHintStr">Name of task</string>
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
@@ -39,5 +39,10 @@
     <string name="homeNavBarDescriptor">Click to go to home page</string>
     <string name="medicineLogNavBarDescriptor">Click to go to medicine page</string>
     <string name="settingsNavBarDescriptor">Click to go to settings page</string>
+
+    <!-- Home Page Strings -->
+    <string name="welcomeHomePageStr">Welcome, _______!</string>
+    <string name="dateHomePageStr">Today is Thursday, April 8, 2021</string>
+    <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
 
 </resources>
