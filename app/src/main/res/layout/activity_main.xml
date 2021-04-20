@@ -97,7 +97,7 @@
             android:layout_gravity="center_horizontal"
             android:paddingStart="15dp"
             android:paddingLeft="16dp"
-            android:paddingTop="20dp"
+            android:paddingTop="19dp"
             android:paddingEnd="100dp"
             android:paddingRight="100dp"
             android:paddingBottom="0dp"
