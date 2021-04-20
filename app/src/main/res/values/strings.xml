@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KatyRamaShay</string>
-    <string name="taskPageTitleStr">Activity Log</string>
+
+    <!-- Create Account Page Strings -->
     <string name="firstNameStr">First Name</string>
     <string name="middleNameStr">Middle Name</string>
     <string name="lastNameStr">Last Name</string>
@@ -12,11 +13,26 @@
     <string name="dateOfBirthLabel">Date of Birth</string>
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
+
+    <!-- Activity Task Page Strings -->
+    <string name="taskPageTitleStr">Activity Log</string>
     <string name="showerButtonDescriptor">Shower button</string>
     <string name="mealsButtonDescriptor">Meals button</string>
     <string name="sleepButtonDescriptor">Sleep button</string>
     <string name="exerciseButtonDescriptor">Exercise button</string>
     <string name="peopleButtonDescriptor">People button</string>
     <string name="newTaskButtonDescriptor">New task button</string>
+
+    <!-- New Task Page Strings -->
+    <string name="newTaskPageTitleStr">New Task</string>
+    <string name="backButtonDescriptionStr">Back button to return to activity log page</string>
+    <string name="nameOfTaskHintStr">Name of task...</string>
+
+    <!-- Navigation Bar Strings -->
+    <string name="taskNavBarDescriptor">Click to go to task page</string>
+    <string name="dailyLogNavBarDescriptor">Click to go to daily log page</string>
+    <string name="homeNavBarDescriptor">Click to go to home page</string>
+    <string name="medicineLogNavBarDescriptor">Click to go to medicine page</string>
+    <string name="settingsNavBarDescriptor">Click to go to settings page</string>
 
 </resources>
