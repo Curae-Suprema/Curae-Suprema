@@ -87,7 +87,7 @@ public class Task {
 
     /**
      * gets any notes that the user made about the task
-     * @return notes
+     * @return user's notes
      */
     public String getNotes() {
         return notes;

@@ -16,7 +16,7 @@ public class Sleep extends Task {
 
     /**
      * creates the default constructor by setting the quality
-     * of sleep to the lowest setting
+     * of sleep to the lowest rating
      */
     public Sleep() {
         quality = 1;

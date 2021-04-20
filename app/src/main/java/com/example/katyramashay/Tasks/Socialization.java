@@ -16,9 +16,7 @@ public class Socialization extends Task {
     //CONSTRUCTORS
 
     /**
-     * creates the default constructor by setting
-     * people to be filled with empty strings, and the activity
-     * name to be empty
+     * creates the default constructor by setting all string to be empty
      */
     public Socialization() {
         people = new ArrayList<>();
