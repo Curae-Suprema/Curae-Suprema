@@ -24,7 +24,9 @@
     <string name="newTaskButtonDescriptor">New task button</string>
 
     <!-- New Task Page Strings -->
-    <string name="newTaskPageTitleStr">New task button</string>
+    <string name="newTaskPageTitleStr">New Task</string>
+    <string name="backButtonDescriptionStr">Back button to return to activity log page</string>
+    <string name="nameOfTaskHintStr">Name of task...</string>
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
