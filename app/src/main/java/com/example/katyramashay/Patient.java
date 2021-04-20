@@ -1,7 +1,7 @@
 package com.example.katyramashay;
 
 /**
- * this class is to model the behavior of a patient
+ * this class models the behavior of a patient
  */
 
 import android.os.Build;
