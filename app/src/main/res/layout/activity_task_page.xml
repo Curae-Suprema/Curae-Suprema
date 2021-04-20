@@ -28,6 +28,7 @@
         android:layout_marginTop="50dp"
         android:contentDescription="@string/showerButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
         app:srcCompat="@drawable/showericon" />
@@ -41,6 +42,7 @@
         android:layout_marginRight="50dp"
         android:contentDescription="@string/mealsButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskPageTitle"
         app:srcCompat="@drawable/mealsicon" />
@@ -54,6 +56,7 @@
         android:layout_marginTop="15dp"
         android:contentDescription="@string/sleepButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showerButton"
         app:srcCompat="@drawable/sleepicon" />
@@ -67,6 +70,7 @@
         android:layout_marginRight="50dp"
         android:contentDescription="@string/exerciseButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealsButton"
         app:srcCompat="@drawable/exerciseicon" />
@@ -80,6 +84,7 @@
         android:layout_marginTop="15dp"
         android:contentDescription="@string/peopleButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleepButton"
         app:srcCompat="@drawable/peopleicon" />
@@ -93,6 +98,7 @@
         android:layout_marginRight="50dp"
         android:contentDescription="@string/newTaskButtonDescriptor"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exerciseButton"
         app:srcCompat="@drawable/newtaskicon" />
@@ -113,6 +119,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/taskNavBarDescriptor"
             android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/tasknavbarselected" />
 
         <ImageButton
@@ -122,6 +129,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/dailyLogNavBarDescriptor"
             android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/dailylognavbar" />
 
         <ImageButton
@@ -131,6 +139,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/homeNavBarDescriptor"
             android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/homenavbar" />
 
         <ImageButton
@@ -140,6 +149,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/medicineLogNavBarDescriptor"
             android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/medicinenavbar" />
 
         <ImageButton
@@ -149,6 +159,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/settingsNavBarDescriptor"
             android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/settingsnavbar" />
 
     </LinearLayout>
