@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KatyRamaShay</string>
-    <string name="taskPageTitleStr">Activity Log</string>
+
+    <!-- Create Account Page Strings -->
     <string name="firstNameStr">First Name</string>
     <string name="middleNameStr">Middle Name</string>
     <string name="lastNameStr">Last Name</string>
@@ -12,11 +13,17 @@
     <string name="dateOfBirthLabel">Date of Birth</string>
     <string name="hintLocation">Room number, suite, apartment, etc.</string>
     <string name="locationLabel">Address</string>
+
+    <!-- Activity Task Page Strings -->
+    <string name="taskPageTitleStr">Activity Log</string>
     <string name="showerButtonDescriptor">Shower button</string>
     <string name="mealsButtonDescriptor">Meals button</string>
     <string name="sleepButtonDescriptor">Sleep button</string>
     <string name="exerciseButtonDescriptor">Exercise button</string>
     <string name="peopleButtonDescriptor">People button</string>
     <string name="newTaskButtonDescriptor">New task button</string>
+
+    <!-- New Task Page Strings -->
+    <string name="newTaskPageTitleStr">New task button</string>
 
 </resources>
