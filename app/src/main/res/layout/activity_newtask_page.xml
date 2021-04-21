@@ -173,7 +173,7 @@
         android:background="@drawable/rounded_corner"
         android:clickable="false"
         android:ems="12"
-        android:hint="@string/reminderOfTaskHintStr"
+        android:hint="@string/notesOfTaskHintStr"
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"

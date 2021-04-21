@@ -32,6 +32,12 @@
     <string name="newTaskPageTitleStr">New Task</string>
     <string name="backButtonDescriptionStr">Back button to return to activity log page</string>
     <string name="nameOfTaskHintStr">Name of task</string>
+    <string name="dateOfTaskHintStr">Date</string>
+    <string name="timeOfTaskHintStr">Time</string>
+    <string name="advancedTitleStr">Advanced</string>
+    <string name="reminderOfTaskHintStr">Reminder</string>
+    <string name="notesOfTaskHintStr">Notes</string>
+
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
