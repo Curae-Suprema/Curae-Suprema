@@ -187,7 +187,7 @@
         <EditText
             android:id="@+id/allergies"
             android:layout_width="500dp"
-            android:layout_height="105"
+            android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
