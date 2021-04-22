@@ -50,5 +50,6 @@
     <string name="welcomeHomePageStr">Welcome, _______!</string>
     <string name="dateHomePageStr">Today is Thursday, April 8, 2021</string>
     <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
+    <string name="completionPercentageStr">69%</string>
 
 </resources>
