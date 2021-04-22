@@ -51,7 +51,7 @@
         <EditText
             android:id="@+id/firstName"
             android:layout_width="500dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -79,7 +79,7 @@
         <EditText
             android:id="@+id/middleName"
             android:layout_width="500dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -108,7 +108,7 @@
         <EditText
             android:id="@+id/lastName"
             android:layout_width="500dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -135,7 +135,7 @@
         <EditText
             android:id="@+id/dateOfBirth"
             android:layout_width="500dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -161,7 +161,7 @@
         <EditText
             android:id="@+id/location"
             android:layout_width="500dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -187,7 +187,7 @@
         <EditText
             android:id="@+id/allergies"
             android:layout_width="500dp"
-            android:layout_height="100dp"
+            android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
@@ -202,7 +202,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:paddingStart="10dp"
-            android:paddingLeft="35dp"
+            android:paddingLeft="0dp"
             android:paddingTop="20dp"
             android:paddingEnd="100dp"
             android:paddingRight="0dp"
@@ -213,7 +213,7 @@
         <EditText
             android:id="@+id/medication"
             android:layout_width="500dp"
-            android:layout_height="100dp"
+            android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
             android:autofillHints=""
             android:background="@drawable/rounded_corner"
