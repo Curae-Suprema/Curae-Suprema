@@ -48,8 +48,8 @@
 
     <!-- Home Page Strings -->
     <string name="welcomeHomePageStr">Welcome, _______!</string>
-    <string name="dateHomePageStr">Today is Thursday, April 22, 2021</string>
-    <string name="completionHomePageStr">You have completed 69% of your tasks today!</string>
-    <string name="completionPercentageStr">69%</string>
+    <string name="dateHomePageStr">Today is ______________________.</string>
+    <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
+    <string name="completionPercentageStr">__%</string>
 
 </resources>
