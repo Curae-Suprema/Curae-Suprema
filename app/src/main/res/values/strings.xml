@@ -37,6 +37,7 @@
     <string name="advancedTitleStr">Advanced</string>
     <string name="reminderOfTaskHintStr">Reminder</string>
     <string name="notesOfTaskHintStr">Notes</string>
+    <string name="makePermanentButtonContentDescriptionStr">Button to make this task a permanent task and add it to the activity log</string>
 
 
     <!-- Navigation Bar Strings -->
