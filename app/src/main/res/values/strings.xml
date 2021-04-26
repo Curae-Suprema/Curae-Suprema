@@ -18,7 +18,6 @@
     <string name="medicationLabelStr">Medications</string>
     <string name="medicationStr">Medication A, medication B, medication C, etc.</string>
 
-
     <!-- Activity Task Page Strings -->
     <string name="taskPageTitleStr">Activity Log</string>
     <string name="showerButtonDescriptor">Shower button</string>
@@ -61,4 +60,10 @@
     <string name="morningLabelStr">Morning</string>
     <string name="afternoonLabelStr">Afternoon</string>
     <string name="eveningLabelStr">Evening</string>
+
+    <!-- Daily Task Page Strings -->
+    <string name="dateDailyTaskStr">_______, _____ __, ____</string>
+    <string name="timeDailyTaskStr">09:00 __</string>
+    <string name="taskNameDailyTaskStr">___________________________</string>
+
 </resources>
