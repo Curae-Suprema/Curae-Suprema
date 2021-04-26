@@ -43,7 +43,9 @@
 
     <!-- Log Entry Page Strings -->
     <string name="logEntryTitleStr">Daily Log Entry</string>
-    <string name="logEntryQuestionOneStr">How are you feeling physically today?</string>
+    <string name="logEntryQuestionOneStr">How are you feeling mentally today?</string>
+    <string name="logEntryQuestionTwoStr">How are you feeling physically today?</string>
+    <string name="logEntryButtonDescriptionStr">An image button signifying the patients emotion</string>
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
