@@ -1,7 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="29dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/medicationsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/medicationTitleStr"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/morningMedLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/morningLabelStr"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/morningMedCheck"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:background="#5C000000"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/morningMed1Str"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/afternoonMedLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/afternoonLabelStr"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/afternoonMedCheck"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:background="#5C000000"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/afternoonMed1Str"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/eveningMedLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/eveningLabelStr"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/eveningMedCheck"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:background="#5C000000"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/eveningMed1Str"
+            android:textSize="18sp"
+            app:useMaterialThemeColors="false" />
+
+        <Button
+            android:id="@+id/medInfoButton"
+            android:layout_width="565dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/medInfoButtonStr"
+            android:textSize="20sp"
+            app:backgroundTint="#C20606" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
