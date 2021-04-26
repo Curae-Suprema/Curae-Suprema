@@ -54,6 +54,7 @@
     <string name="medicineLogNavBarDescriptor">Click to go to medicine page</string>
     <string name="settingsNavBarDescriptor">Click to go to settings page</string>
 
+
     <!-- Home Page Strings -->
     <string name="welcomeHomePageStr">Welcome, _______!</string>
     <string name="dateHomePageStr">Today is ________ _____ __, ____.</string>
