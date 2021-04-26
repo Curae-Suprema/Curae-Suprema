@@ -39,6 +39,9 @@
     <string name="notesOfTaskHintStr">Notes</string>
     <string name="makePermanentButtonContentDescriptionStr">Button to make this task a permanent task and add it to the activity log</string>
 
+    <!-- Log Entry Page Strings -->
+    <string name="logEntryTitleStr">Daily Log Entry</string>
+    <string name="logEntryQuestionOneStr">How are you feeling physically today?</string>
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
