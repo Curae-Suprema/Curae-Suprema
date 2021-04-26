@@ -62,8 +62,8 @@
     <string name="eveningLabelStr">Evening</string>
 
     <!-- Daily Task Page Strings -->
-    <string name="dateDailyTaskStr">_______, _____ __, ____</string>
-    <string name="timeDailyTaskStr">09:00 __</string>
-    <string name="taskNameDailyTaskStr">___________________________</string>
+    <string name="dateDailyTaskStr">Thursday, April 26, 2021</string>
+    <string name="timeDailyTaskStr">09:00 AM</string>
+    <string name="taskNameDailyTaskStr">__________________</string>
 
 </resources>
