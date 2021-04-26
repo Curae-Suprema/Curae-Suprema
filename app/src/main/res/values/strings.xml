@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">KatyRamaShay</string>
 
+    <!-- Main Activity Strings -->
+    <string name="logoDescriptor">Curae Suprema logo</string>
+
     <!-- Create Account Page Strings -->
     <string name="firstNameStr">First Name</string>
     <string name="middleNameStr">Middle Name</string>
