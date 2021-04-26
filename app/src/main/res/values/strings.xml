@@ -66,6 +66,10 @@
     <string name="morningLabelStr">Morning</string>
     <string name="afternoonLabelStr">Afternoon</string>
     <string name="eveningLabelStr">Evening</string>
+    <string name="morningMed1Str">Morning Med A</string>
+    <string name="eveningMed1Str">Evening Med A</string>
+    <string name="afternoonMed1Str">Afternoon Med A</string>
+    <string name="medInfoButtonStr">View Medication Information</string>
 
     <!-- Daily Task Page Strings -->
     <string name="dateDailyTaskStr">Thursday, April 26, 2021</string>
