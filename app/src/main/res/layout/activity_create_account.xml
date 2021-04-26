@@ -26,10 +26,7 @@ tools:context=".MainActivity" >
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="160dp"
-        android:paddingLeft="170dp"
-        android:paddingEnd="90dp"
-        android:paddingRight="90dp"
+        android:gravity="center_horizontal"
         android:text="@string/headerLabelStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
@@ -42,14 +39,10 @@ tools:context=".MainActivity" >
         android:layout_gravity="center_horizontal"
         android:background="@color/white"
         android:ems="4"
-        android:paddingStart="15dp"
-        android:paddingLeft="40dp"
-        android:paddingTop="20dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="10dp"
+        android:padding="10dp"
         android:text="@string/firstNameStr"
         android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/firstName"
@@ -62,23 +55,22 @@ tools:context=".MainActivity" >
         android:ems="7"
         android:hint="@string/hintFirstName"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
         android:textColor="@color/white"
-        android:textColorHint="#FFFFFF" />
+        android:textColorHint="#FFFFFF"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp" />
 
     <TextView
         android:id="@+id/middleNameLabel"
         android:layout_width="500dp"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="16dp"
-        android:paddingTop="20dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="100dp"
+        android:padding="10dp"
         android:text="@string/middleNameStr"
         android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/middleName"
@@ -91,24 +83,22 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/hintMiddleName"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
         android:textColor="@color/white"
-        android:textColorHint="#FFFFFF" />
+        android:textColorHint="#FFFFFF"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp" />
 
     <TextView
         android:id="@+id/lastNameLabel"
         android:layout_width="500dp"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="16dp"
-        android:paddingTop="19dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="100dp"
-        android:paddingBottom="0dp"
+        android:padding="10dp"
         android:text="@string/lastNameStr"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/lastName"
@@ -120,7 +110,7 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/hintLastName"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:padding="20dp"
         android:textColorHint="#FFFFFF" />
 
     <TextView
@@ -128,15 +118,11 @@ tools:context=".MainActivity" >
         android:layout_width="500dp"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="16dp"
-        android:paddingTop="20dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="100dp"
+        android:padding="10dp"
         android:text="@string/dateOfBirthLabel"
         android:textColor="@color/black"
         android:textColorHint="@color/white"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/dateOfBirth"
@@ -148,7 +134,7 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/dateOfBirthStr"
         android:inputType="date"
-        android:padding="10dp"
+        android:padding="20dp"
         android:textColorHint="#FFFFFF" />
 
     <TextView
@@ -156,14 +142,10 @@ tools:context=".MainActivity" >
         android:layout_width="500dp"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="16dp"
-        android:paddingTop="20dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="100dp"
+        android:padding="10dp"
         android:text="@string/locationLabel"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/location"
@@ -175,22 +157,18 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/hintLocation"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:padding="20dp"
         android:textColorHint="#FFFFFF" />
 
     <TextView
         android:id="@+id/allergiesLabel"
         android:layout_width="500dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="16dp"
-        android:paddingTop="30dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="100dp"
+        android:padding="10dp"
         android:text="@string/allergiesLabelStr"
         android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/allergies"
@@ -202,7 +180,7 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/allergiesStr"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:padding="20dp"
         android:textColorHint="#FFFFFF" />
 
     <TextView
@@ -210,14 +188,10 @@ tools:context=".MainActivity" >
         android:layout_width="500dp"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
-        android:paddingStart="10dp"
-        android:paddingLeft="0dp"
-        android:paddingTop="20dp"
-        android:paddingEnd="100dp"
-        android:paddingRight="0dp"
+        android:padding="10dp"
         android:text="@string/medicationLabelStr"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/medication"
@@ -229,7 +203,7 @@ tools:context=".MainActivity" >
         android:ems="10"
         android:hint="@string/medicationStr"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:padding="20dp"
         android:textColorHint="@color/white" />
 
 </LinearLayout>
