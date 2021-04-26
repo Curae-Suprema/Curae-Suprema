@@ -55,5 +55,9 @@
     <string name="dateHomePageStr">Today is ________ _____ __, ____.</string>
     <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
     <string name="completionPercentageStr">__%</string>
+    <string name="medicationTitleStr">Medication</string>
 
+    <string name="morningLabelStr">Morning</string>
+    <string name="afternoonLabelStr">Afternoon</string>
+    <string name="eveningLabelStr">Evening</string>
 </resources>
