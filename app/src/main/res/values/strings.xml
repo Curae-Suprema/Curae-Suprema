@@ -47,6 +47,7 @@
     <string name="logEntryQuestionTwoStr">How are you feeling physically today?</string>
     <string name="logEntryButtonDescriptionStr">An image button signifying the patients emotion</string>
 
+
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
     <string name="dailyLogNavBarDescriptor">Click to go to daily log page</string>
