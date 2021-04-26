@@ -57,6 +57,7 @@
     <string name="completionPercentageStr">__%</string>
     <string name="medicationTitleStr">Medication</string>
 
+    <!-- Medication Page -->
     <string name="morningLabelStr">Morning</string>
     <string name="afternoonLabelStr">Afternoon</string>
     <string name="eveningLabelStr">Evening</string>
