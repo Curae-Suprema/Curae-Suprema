@@ -16,28 +16,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    private Patient patient = new Patient();
 
-    private void writeDatabase() {
+        // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("patient");
-        myRef.setValue(patient);
-    }
+        DatabaseReference myRef = database.getReference("message");
+        myRef.setValue("Hello, World!");
 
-    private void updatePatient() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("patient");
+        // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                patient = dataSnapshot.getValue(Patient.class);
-                Log.d("Controller", "Patient data retrieved successfully.");
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                String value = dataSnapshot.getValue(String.class);
+                Log.d("MainActivity", "Value is: " + value);
             }
             @Override
             public void onCancelled(DatabaseError error) {
-                Log.w("Controller", "Failed to read Patient data.", error.toException());
+                // Failed to read value
+                Log.w("MainActivity", "Failed to read value.", error.toException());
             }
         });
     }
