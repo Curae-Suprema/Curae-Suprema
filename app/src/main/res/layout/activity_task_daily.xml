@@ -85,7 +85,6 @@
                     tools:targetApi="lollipop" />
             </LinearLayout>
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

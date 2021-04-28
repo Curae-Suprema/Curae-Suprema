@@ -54,4 +54,15 @@ public class Day {
     public Task getTask(int index) {
         return taskList.get(index);
     }
+
+    public double getCompletionPercentage() {
+        int completedTasks = 0;
+
+        for (int i = 0; i < taskList.size(); i++) {
+            if (taskList.get(i).getCompletion())
+                completedTasks++;
+        }
+
+        return completedTasks * 100.0 / taskList.size();
+    }
 }
