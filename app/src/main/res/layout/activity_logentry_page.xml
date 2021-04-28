@@ -305,7 +305,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="17dp"
         android:background="@drawable/rounded_corner"
-        android:text="Button"
+        android:text="@string/viewLogEntriesButtonStr"
         app:backgroundTint="@color/projectRed"
         app:layout_constraintEnd_toEndOf="@+id/reasonHealthQuestionView"
         app:layout_constraintTop_toBottomOf="@+id/reasonHealthQuestionView" />
