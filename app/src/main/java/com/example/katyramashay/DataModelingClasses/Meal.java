@@ -1,4 +1,4 @@
-package com.example.katyramashay.Tasks;
+package com.example.katyramashay.DataModelingClasses;
 
 /**
  * this class models the behavior of the meals a patient eats in a day,

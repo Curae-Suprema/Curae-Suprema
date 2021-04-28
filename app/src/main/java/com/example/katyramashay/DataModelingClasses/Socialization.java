@@ -1,4 +1,4 @@
-package com.example.katyramashay.Tasks;
+package com.example.katyramashay.DataModelingClasses;
 
 /**
  * this class models the behavior of the social activities that a patient does

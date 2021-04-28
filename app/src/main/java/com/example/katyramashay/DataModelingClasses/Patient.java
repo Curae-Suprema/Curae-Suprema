@@ -1,15 +1,7 @@
-package com.example.katyramashay;
+package com.example.katyramashay.DataModelingClasses;
 
-/**
- * this class models the behavior of a patient
- */
-
-import android.os.Build;
-import androidx.annotation.RequiresApi;
-import com.example.katyramashay.Tasks.Day;
-
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Patient {
 
@@ -17,11 +9,11 @@ public class Patient {
     private String firstName;
     private String middleName;
     private String lastName;
-    private LocalDate birthday;
+    private Calendar birthday;
     private String location;
-    private ArrayList<Day> days;
-    private ArrayList<String> medications;
-    private ArrayList<String> allergies;
+    private final ArrayList<Day> days;
+    private final ArrayList<String> medications;
+    private final ArrayList<String> allergies;
 
 
     //CONSTRUCTOR
@@ -30,12 +22,11 @@ public class Patient {
      * creates the default constructor by setting all strings to be empty,
      * DOB to a default date, and arrayLists with empty strings
      */
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public Patient() {
         firstName = "";
         middleName = "";
         lastName = "";
-        birthday = LocalDate.now();
+        birthday = Calendar.getInstance();
         days = new ArrayList<>();
         location = "";
         medications = new ArrayList<>();
@@ -96,24 +87,18 @@ public class Patient {
      * gets the user's birth date
      * @return the user's DOB
      */
-    public LocalDate getBirthday() {
+    public Calendar getBirthday() {
         return birthday;
     }
 
-    /**
-     *
-     * @param month
-     * @param day
-     * @param year
-     */
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void setBirthday(int month, int day, int year) {
-        birthday = LocalDate.of(year, month, day);
+        birthday.set(year, month, day);
     }
 
     public void setLocation(String loc) {
         location = loc;
     }
+
     public String getLocation() {
         return location;
     }
@@ -133,20 +118,24 @@ public class Patient {
     public ArrayList<String> getMedications() {
         return medications;
     }
+
     public void addMedications(String medication) {
         medications.add(medication);
     }
-    public void removeMedications(String medication) {
-        medications.remove(medication);
+
+    public void removeMedications(int index) {
+        medications.remove(index);
     }
 
     public ArrayList<String> getAllergies() {
         return allergies;
     }
+
     public void addAllergy(String newAllergy){
         allergies.add(newAllergy);
     }
-    public void removeAllergy(String newAllergy) {
-        allergies.remove(newAllergy);
+
+    public void removeAllergy(int index) {
+        allergies.remove(index);
     }
 }

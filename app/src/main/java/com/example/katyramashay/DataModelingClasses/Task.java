@@ -1,4 +1,4 @@
-package com.example.katyramashay.Tasks;
+package com.example.katyramashay.DataModelingClasses;
 
 /**
  * this class models the tasks that a patient completes in a day

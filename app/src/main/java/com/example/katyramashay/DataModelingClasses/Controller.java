@@ -1,7 +1,6 @@
-package com.example.katyramashay.Tasks;
+package com.example.katyramashay.DataModelingClasses;
 
 import android.app.Application;
-import com.example.katyramashay.Patient;
 
 import java.util.ArrayList;
 import java.util.Calendar;
