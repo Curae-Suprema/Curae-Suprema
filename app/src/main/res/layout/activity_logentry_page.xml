@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/logEntryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/logEntryTitleStr"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentalHealthQuestionView"
+        android:layout_width="575dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_grey"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="@string/logEntryQuestionOneStr"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logEntryTitle" />
+
+    <View
+        android:id="@+id/logEntryQuestionOneEntryField"
+        android:layout_width="550dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintEnd_toEndOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintTop_toTopOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <ImageButton
+        android:id="@+id/cryingButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/crying" />
+
+    <ImageButton
+        android:id="@+id/slightlyCryingButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/slightlycrying" />
+
+    <ImageButton
+        android:id="@+id/verySadButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/verysad" />
+
+    <ImageButton
+        android:id="@+id/slightlySadButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/slightlysad" />
+
+    <ImageButton
+        android:id="@+id/neutralButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/neutral" />
+
+    <ImageButton
+        android:id="@+id/slightlyHappyButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/slightlyhappy" />
+
+    <ImageButton
+        android:id="@+id/happyButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/slightlySmilingButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="430dp"
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/slightlysmiling" />
+
+    <ImageButton
+        android:id="@+id/smilingButton"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="490dp"
+        android:layout_marginLeft="490dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logEntryButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintStart_toStartOf="@+id/logEntryQuestionOneEntryField"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionOneEntryField"
+        app:srcCompat="@drawable/smiling" />
+
+    <TextView
+        android:id="@+id/physicalHealthQuestionView"
+        android:layout_width="575dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_grey"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="@string/logEntryQuestionTwoStr"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentalHealthQuestionView" />
+
+    <View
+        android:id="@+id/logEntryQuestionTwoEntryField"
+        android:layout_width="550dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintEnd_toEndOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintTop_toTopOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <SeekBar
+        android:id="@+id/physicalHealthSeekBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="530dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:maxHeight="20dp"
+        android:minHeight="20dp"
+        android:padding="10dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/rounded_corner_grey_no_transparency"
+        android:thumb="@drawable/blackcircle"
+        app:layout_constraintBottom_toBottomOf="@+id/logEntryQuestionTwoEntryField"
+        app:layout_constraintEnd_toEndOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintStart_toStartOf="@+id/physicalHealthQuestionView"
+        app:layout_constraintTop_toTopOf="@+id/logEntryQuestionTwoEntryField" />
+
+    <TextView
+        android:id="@+id/reasonHealthQuestionView"
+        android:layout_width="575dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_grey"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="@string/logEntryQuestionThreeStr"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physicalHealthQuestionView" />
+
+    <EditText
+        android:id="@+id/logEntryQuestionThreeEntryField"
+        android:layout_width="550dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="start"
+        android:hint="@string/logEntryQuestionThreeHintStr"
+        android:importantForAccessibility="no"
+        android:inputType="textLongMessage"
+        android:padding="15dp"
+        android:textColorHint="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/reasonHealthQuestionView"
+        app:layout_constraintEnd_toEndOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/mentalHealthQuestionView"
+        app:layout_constraintTop_toTopOf="@+id/reasonHealthQuestionView"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="92dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/downArrowButtonDescriptionStr"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reasonHealthQuestionView"
+        app:srcCompat="@drawable/down_red_arrow" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/doneButtonStr"
+        app:backgroundTint="@color/projectRed"
+        app:layout_constraintStart_toStartOf="@+id/reasonHealthQuestionView"
+        app:layout_constraintTop_toBottomOf="@+id/reasonHealthQuestionView" />
+
+    <Button
+        android:id="@+id/viewLogEntriesButton"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Button"
+        app:backgroundTint="@color/projectRed"
+        app:layout_constraintEnd_toEndOf="@+id/reasonHealthQuestionView"
+        app:layout_constraintTop_toBottomOf="@+id/reasonHealthQuestionView" />
+
+    <LinearLayout
+        android:id="@+id/NavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/taskNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/taskNavBarDescriptor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/tasknavbar" />
+
+        <ImageButton
+            android:id="@+id/dailyLogNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/dailyLogNavBarDescriptor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/dailylognavbarselected" />
+
+        <ImageButton
+            android:id="@+id/homeNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/homeNavBarDescriptor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/homenavbar" />
+
+        <ImageButton
+            android:id="@+id/medicineNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/medicineLogNavBarDescriptor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/medicinenavbar" />
+
+        <ImageButton
+            android:id="@+id/settingsNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/settingsNavBarDescriptor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/settingsnavbar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
