@@ -46,7 +46,7 @@
     <string name="logEntryQuestionOneStr">How are you feeling mentally today?</string>
     <string name="logEntryQuestionTwoStr">How are you feeling physically today?</string>
     <string name="logEntryQuestionThreeStr">Why do you feel this way?</string>
-    <string name="logEntryQuestionThreeHintStr">Type your answer...</string>
+    <string name="logEntryQuestionThreeHintStr">Type your answer here</string>
     <string name="logEntryButtonDescriptionStr">A button signifying the patients emotion</string>
     <string name="downArrowButtonDescriptionStr">A button allowing the user to move to the next page for more questions</string>
     <string name="doneButtonStr">Done</string>
@@ -82,5 +82,6 @@
     <string name="taskNameDailyTaskStr">__________________</string>
     <string name="accountPassStr">Password</string>
     <string name="accountUsernameStr">Username</string>
+    <string name="viewLogEntriesStr">View All Entries</string>
 
 </resources>
