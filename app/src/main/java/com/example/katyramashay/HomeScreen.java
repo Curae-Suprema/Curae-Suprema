@@ -1,7 +1,10 @@
 package com.example.katyramashay;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.example.katyramashay.DataModelingClasses.Controller;
@@ -10,12 +13,12 @@ import java.util.Locale;
 
 import static java.text.DateFormat.getDateInstance;
 
-public class Home extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_screen);
 
         final Controller controller = (Controller) getApplicationContext();
 
@@ -41,5 +44,9 @@ public class Home extends AppCompatActivity {
         ProgressBar completionCircle = findViewById(R.id.completionCircle);
         completionCircle.setProgress(percent);
 
+    }
+
+    public void performTaskPageNavigation(View v) {
+        //Intent intent = new Intent
     }
 }

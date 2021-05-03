@@ -1,211 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/constraintLayout"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@color/white"
-tools:context=".MainActivity" >
-
-<LinearLayout
-    android:id="@+id/linearLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
-    android:layout_marginBottom="44dp"
-    android:orientation="vertical"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
 
-
-    <TextView
-        android:id="@+id/headerLabel"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:text="@string/headerLabelStr"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/firstNameLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/white"
-        android:ems="4"
-        android:padding="10dp"
-        android:text="@string/firstNameStr"
-        android:textColor="#000000"
-        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/firstName"
-        android:layout_width="500dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:clickable="false"
-        android:ems="7"
-        android:hint="@string/hintFirstName"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/white"
-        android:textColorHint="#FFFFFF"
-        android:paddingStart="20dp"
-        android:paddingEnd="0dp" />
+        <TextView
+            android:id="@+id/headerLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/headerLabelStr"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/middleNameLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/middleNameStr"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:ems="4"
+            android:padding="10dp"
+            android:text="@string/firstNameStr"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/middleName"
-        android:layout_width="500dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:clickable="false"
-        android:ems="10"
-        android:hint="@string/hintMiddleName"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/white"
-        android:textColorHint="#FFFFFF"
-        android:paddingStart="20dp"
-        android:paddingEnd="0dp" />
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:clickable="false"
+            android:ems="7"
+            android:hint="@string/hintFirstName"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp" />
 
-    <TextView
-        android:id="@+id/lastNameLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/lastNameStr"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/middleNameLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/middleNameStr"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/lastName"
-        android:layout_width="500dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:hint="@string/hintLastName"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/middleName"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:clickable="false"
+            android:ems="10"
+            android:hint="@string/hintMiddleName"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp" />
 
-    <TextView
-        android:id="@+id/dateOfBirthLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/dateOfBirthLabel"
-        android:textColor="@color/black"
-        android:textColorHint="@color/white"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/lastNameLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/lastNameStr"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/dateOfBirth"
-        android:layout_width="500dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:hint="@string/dateOfBirthStr"
-        android:inputType="date"
-        android:padding="20dp"
-        android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/hintLastName"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColorHint="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/locationLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/locationLabel"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/dateOfBirthLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/dateOfBirthLabel"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/location"
-        android:layout_width="500dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:hint="@string/hintLocation"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/dateOfBirthStr"
+            android:inputType="date"
+            android:padding="20dp"
+            android:textColorHint="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/allergiesLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/allergiesLabelStr"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/locationLabel"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/allergies"
-        android:layout_width="500dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:hint="@string/allergiesStr"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/hintLocation"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColorHint="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/medicationLabel"
-        android:layout_width="500dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/medicationLabelStr"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/allergiesLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/allergiesLabelStr"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/medication"
-        android:layout_width="500dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:hint="@string/medicationStr"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="500dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/allergiesStr"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColorHint="#FFFFFF" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/medicationLabel"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/medicationLabelStr"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/medication"
+            android:layout_width="500dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/medicationStr"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
