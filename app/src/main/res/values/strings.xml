@@ -51,6 +51,10 @@
     <string name="downArrowButtonDescriptionStr">A button allowing the user to move to the next page for more questions</string>
     <string name="doneButtonStr">Done</string>
     <string name="viewLogEntriesButtonStr">View All Entries</string>
+    <string name="painQuestionViewStr">How much pain did you feel today?</string>
+    <string name="painQuestionFollowUpViewStr">Where/Why?</string>
+    <string name="additionalInformationViewStr">Is there anything else you would like to share?</string>
+
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>
