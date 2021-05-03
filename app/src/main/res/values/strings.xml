@@ -54,10 +54,11 @@
     <string name="painQuestionViewStr">How much pain did you feel today?</string>
     <string name="painQuestionFollowUpViewStr">Where/Why?</string>
     <string name="additionalInformationViewStr">Is there anything else you would like to share?</string>
-    <string name="physicalHealthSeekBarLeftLabel">Terrible</string>
-    <string name="physicalHealthSeekBarMiddleLabel">Normal</string>
-    <string name="physicalHealthSeekBarRightLabel">Amazing</string>
-
+    <string name="physicalHealthSeekBarLeftLabelStr">Terrible</string>
+    <string name="physicalHealthSeekBarMiddleLabelStr">Normal</string>
+    <string name="physicalHealthSeekBarRightLabelStr">Amazing</string>
+    <string name="painSeekBarLeftLabelStr">1</string>
+    <string name="painSeekBarRightLabelStr">10</string>
 
     <!-- Navigation Bar Strings -->
     <string name="taskNavBarDescriptor">Click to go to task page</string>

@@ -237,7 +237,7 @@
                     android:id="@+id/physicalHealthSeekBarLeftLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/physicalHealthSeekBarLeftLabel"
+                    android:text="@string/physicalHealthSeekBarLeftLabelStr"
                     android:textColor="#FFFFFF"
                     app:layout_constraintStart_toStartOf="@+id/physicalHealthSeekBar"
                     app:layout_constraintTop_toBottomOf="@+id/physicalHealthSeekBar" />
@@ -246,7 +246,7 @@
                     android:id="@+id/physicalHealthSeekBarMiddleLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/physicalHealthSeekBarMiddleLabel"
+                    android:text="@string/physicalHealthSeekBarMiddleLabelStr"
                     android:textColor="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="@+id/physicalHealthSeekBar"
                     app:layout_constraintStart_toStartOf="@+id/physicalHealthSeekBar"
@@ -256,7 +256,7 @@
                     android:id="@+id/physicalHealthSeekBarRightLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/physicalHealthSeekBarRightLabel"
+                    android:text="@string/physicalHealthSeekBarRightLabelStr"
                     android:textColor="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="@+id/physicalHealthSeekBar"
                     app:layout_constraintTop_toBottomOf="@+id/physicalHealthSeekBar" />
@@ -334,6 +334,25 @@
                     app:layout_constraintEnd_toEndOf="@+id/painQuestionEntryField"
                     app:layout_constraintStart_toStartOf="@+id/painQuestionEntryField"
                     app:layout_constraintTop_toTopOf="@+id/painQuestionEntryField" />
+
+                <TextView
+                    android:id="@+id/painSeekBarLeftLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/painSeekBarLeftLabelStr"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@+id/painSeekBar"
+                    app:layout_constraintTop_toBottomOf="@+id/painSeekBar" />
+
+                <TextView
+                    android:id="@+id/painSeekBarRightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/painSeekBarRightLabelStr"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="@+id/painSeekBar"
+                    app:layout_constraintTop_toBottomOf="@+id/painSeekBar" />
 
                 <TextView
                     android:id="@+id/painFollowUpQuestionView2"
