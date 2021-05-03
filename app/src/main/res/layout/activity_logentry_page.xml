@@ -335,6 +335,7 @@
                     app:layout_constraintStart_toStartOf="@+id/painFollowUpQuestionView2"
                     app:layout_constraintTop_toTopOf="@+id/painFollowUpQuestionView2" />
 
+
                 <TextView
                     android:id="@+id/additionalInfoQuestionView"
                     android:layout_width="575dp"
