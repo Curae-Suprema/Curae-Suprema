@@ -88,4 +88,12 @@
     <string name="accountUsernameStr">Username</string>
     <string name="viewLogEntriesStr">View All Entries</string>
 
+    <!-- Settings Page -->
+    <string name="accountNameSampleStr">Last Name, First Name</string>
+    <string name="userSettingsStr">User Settings</string>
+    <string name="usernameEditStr">Change Username</string>
+    <string name="passwordEditStr">Change Password</string>
+    <string name="settingsLabelStr">Account Settings</string>
+    <string name="changeAccountInfoStr">Change Account Information</string>
+
 </resources>
