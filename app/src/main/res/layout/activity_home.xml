@@ -5,7 +5,7 @@
     android:id="@+id/HomePageConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TaskPage">
+    tools:context=".Home">
 
     <TextView
         android:id="@+id/welcomeHomePage"
@@ -60,6 +60,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateHomePage" />
+
+    <Button
+        android:id="@+id/dailyTaskNavigation"
+        android:layout_width="425dp"
+        android:layout_height="425dp"
+        android:onClick="performDailyTask"
+        android:visibility="visible"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/completionCircle" />
 
     <ProgressBar
         android:id="@+id/completionCircle"
@@ -116,6 +128,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/taskNavBarDescriptor"
+            android:onClick="performTaskPage"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/tasknavbar" />
 
@@ -126,6 +139,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/dailyLogNavBarDescriptor"
+            android:onClick="performDailyLog"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/dailylognavbar" />
 
@@ -136,6 +150,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/homeNavBarDescriptor"
+            android:onClick="performHome"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/homenavbarselected" />
 
@@ -146,6 +161,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/medicineLogNavBarDescriptor"
+            android:onClick="performMedications"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/medicinenavbar" />
 

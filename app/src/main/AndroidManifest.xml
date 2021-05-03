@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatyRamaShay">
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".DailyTask" />
+        <activity android:name=".NewTask" />
+        <activity android:name=".Medications" />
+        <activity android:name=".CreateAccount" />
         <activity android:name=".TaskPage" />
         <activity android:name=".MainActivity">
             <intent-filter>

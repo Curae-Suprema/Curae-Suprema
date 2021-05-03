@@ -126,6 +126,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/taskNavBarDescriptor"
+            android:onClick="performTaskPage"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/tasknavbarselected" />
 
@@ -136,6 +137,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/dailyLogNavBarDescriptor"
+            android:onClick="performDailyLog"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/dailylognavbar" />
 
@@ -146,6 +148,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/homeNavBarDescriptor"
+            android:onClick="performHome"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/homenavbar" />
 
@@ -156,6 +159,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/medicineLogNavBarDescriptor"
+            android:onClick="performMedications"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/medicinenavbar" />
 
