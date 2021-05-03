@@ -1,9 +1,5 @@
 package com.example.katyramashay.DataModelingClasses;
 
-/**
- * this class models the behavior of the patient's data
- */
-
 import android.app.Application;
 
 import java.util.ArrayList;
@@ -77,7 +73,7 @@ public class Controller extends Application {
      * returns the birth date of the patient
      * @return the patient's birth date
      */
-    public Calendar getBirthday() {
+    public String getBirthday() {
         return patient.getBirthday();
     }
 

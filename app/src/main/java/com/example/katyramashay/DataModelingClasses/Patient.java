@@ -1,7 +1,10 @@
 package com.example.katyramashay.DataModelingClasses;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class Patient {
 
@@ -9,7 +12,7 @@ public class Patient {
     private String firstName;
     private String middleName;
     private String lastName;
-    private Calendar birthday;
+    private String birthday;
     private String location;
     private final ArrayList<Day> days;
     private final ArrayList<String> medications;
@@ -26,7 +29,10 @@ public class Patient {
         firstName = "";
         middleName = "";
         lastName = "";
-        birthday = Calendar.getInstance();
+        Calendar dateStamp = Calendar.getInstance();
+        Date date = dateStamp.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMMMMMMM dd, yyyy", Locale.US);
+        birthday = sdf.format(date);
         days = new ArrayList<>();
         location = "";
         medications = new ArrayList<>();
@@ -87,12 +93,33 @@ public class Patient {
      * gets the user's birth date
      * @return the user's DOB
      */
-    public Calendar getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
     public void setBirthday(int month, int day, int year) {
-        birthday.set(year, month, day);
+
+        switch(month) {
+            case 1: month = Calendar.JANUARY; break;
+            case 2: month = Calendar.FEBRUARY; break;
+            case 3: month = Calendar.MARCH; break;
+            case 4: month = Calendar.APRIL; break;
+            case 5: month = Calendar.MAY; break;
+            case 6: month = Calendar.JUNE; break;
+            case 7: month = Calendar.JULY; break;
+            case 8: month = Calendar.AUGUST; break;
+            case 9: month = Calendar.SEPTEMBER; break;
+            case 10: month = Calendar.OCTOBER; break;
+            case 11: month = Calendar.NOVEMBER; break;
+            case 12: month = Calendar.DECEMBER; break;
+            default: month = Calendar.JANUARY;
+        }
+
+        Calendar dateStamp = Calendar.getInstance();
+        dateStamp.set(year, month, day);
+        Date date = dateStamp.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMMMMMMM dd, yyyy", Locale.US);
+        birthday = sdf.format(date);
     }
 
     public void setLocation(String loc) {

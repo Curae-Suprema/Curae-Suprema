@@ -1,19 +1,16 @@
 package com.example.katyramashay.DataModelingClasses;
 
-/**
- * this class models the behaviors/tasks completed in a day
- */
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import static java.text.DateFormat.getDateInstance;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class Day {
 
    //DATA
     private final ArrayList<Task> taskList;
     private final String dateStamp;
-
 
     //CONSTRUCTOR
 
@@ -24,9 +21,11 @@ public class Day {
      */
     public Day() {
         taskList = new ArrayList<>();
-        dateStamp = new SimpleDateFormat("MMM dd, yyyy").format(getDateInstance());
+        Calendar cal = Calendar.getInstance();
+        Date date = cal.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US);
+        dateStamp = sdf.format(date);
     }
-
 
     //METHODS
 
@@ -55,7 +54,7 @@ public class Day {
         return taskList.get(index);
     }
 
-    public double getCompletionPercentage() {
+    public int getCompletionPercentage() {
         int completedTasks = 0;
 
         for (int i = 0; i < taskList.size(); i++) {
@@ -63,6 +62,6 @@ public class Day {
                 completedTasks++;
         }
 
-        return completedTasks * 100.0 / taskList.size();
+        return (int) (completedTasks * 100.0 / taskList.size());
     }
 }
