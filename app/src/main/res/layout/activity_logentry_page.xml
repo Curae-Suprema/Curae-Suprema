@@ -234,6 +234,34 @@
                     app:layout_constraintTop_toTopOf="@+id/physicalQuestionEntryField" />
 
                 <TextView
+                    android:id="@+id/physicalHealthSeekBarLeftLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/physicalHealthSeekBarLeftLabel"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="@+id/physicalHealthSeekBar"
+                    app:layout_constraintTop_toBottomOf="@+id/physicalHealthSeekBar" />
+
+                <TextView
+                    android:id="@+id/physicalHealthSeekBarMiddleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/physicalHealthSeekBarMiddleLabel"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="@+id/physicalHealthSeekBar"
+                    app:layout_constraintStart_toStartOf="@+id/physicalHealthSeekBar"
+                    app:layout_constraintTop_toBottomOf="@+id/physicalHealthSeekBar" />
+
+                <TextView
+                    android:id="@+id/physicalHealthSeekBarRightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/physicalHealthSeekBarRightLabel"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="@+id/physicalHealthSeekBar"
+                    app:layout_constraintTop_toBottomOf="@+id/physicalHealthSeekBar" />
+
+                <TextView
                     android:id="@+id/followUpQuestionView"
                     android:layout_width="575dp"
                     android:layout_height="220dp"
