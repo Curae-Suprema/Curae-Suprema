@@ -13,12 +13,12 @@ import java.util.Locale;
 
 import static java.text.DateFormat.getDateInstance;
 
-public class HomeScreen extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.activity_home);
 
         final Controller controller = (Controller) getApplicationContext();
 
@@ -46,7 +46,24 @@ public class HomeScreen extends AppCompatActivity {
 
     }
 
-    public void performTaskPageNavigation(View v) {
-        //Intent intent = new Intent
+    public void performTaskPage(View v) {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
     }
+
+    public void performDailyLog(View v) {
+        Intent intent = new Intent(this, DailyTask.class);
+        startActivity(intent);
+    }
+
+    public void performHome(View v) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    public void performMedications(View v) {
+        Intent intent = new Intent(this, Medications.class);
+        startActivity(intent);
+    }
+
 }
