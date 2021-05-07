@@ -1,12 +1,8 @@
 package com.example.katyramashay;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-
 import com.example.katyramashay.DataModelingClasses.Patient;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -41,25 +37,5 @@ public class MainActivity extends AppCompatActivity {
                 Log.w("MainActivity", "Failed to read patient data.", error.toException());
             }
         });
-    }
-
-    public void performTaskPage(View v) {
-        Intent intent = new Intent(this, TaskPage.class);
-        startActivity(intent);
-    }
-
-    public void performDailyLog(View v) {
-        Intent intent = new Intent(this, DailyTask.class);
-        startActivity(intent);
-    }
-
-    public void performHome(View v) {
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
-    }
-
-    public void performMedications(View v) {
-        Intent intent = new Intent(this, Medications.class);
-        startActivity(intent);
     }
 }

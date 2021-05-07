@@ -4,6 +4,7 @@ package com.example.katyramashay.DataModelingClasses;
  * this class models the tasks that a patient completes in a day
  */
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Task {
@@ -71,8 +72,9 @@ public class Task {
      * gets the date of the reminder for the task
      * @return the reminder date/time
      */
-    public Calendar getReminder() {
-        return reminder;
+    public String getReminder() {
+        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm aa");
+        return sdf.format(reminder);
     }
 
     /**
