@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="0dp"
-            android:paddingBottom="10dp"
+            android:paddingBottom="11dp"
             android:text="@string/mealQuesitonStr"
             android:textColor="@color/black"
             android:textSize="30sp"
