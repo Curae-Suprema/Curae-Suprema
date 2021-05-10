@@ -122,7 +122,7 @@
     <string name="socialPeopleNamesHintStr">Enter names here</string>
     <string name="sleepPageLabelStr">Sleep</string>
     <string name="sleepQualityQuestionStr">How well did you sleep last night?</string>
-    <string name="sleepQualityHintStr">Enter quality here</string>
+    <string name="sleepQualityHintStr">Enter sleep quality here</string>
 
     <!-- Task Description Pages -->
 

@@ -125,7 +125,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/durationAmt"
+            android:id="@+id/duration"
             android:layout_width="570dp"
             android:layout_height="120dp"
             android:layout_gravity="center_horizontal"

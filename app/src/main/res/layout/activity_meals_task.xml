@@ -72,7 +72,7 @@
         app:srcCompat="@drawable/meal" />
 
     <LinearLayout
-        android:id="@+id/descriptionLayout"
+        android:id="@+id/mealQuestions"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="240dp"
