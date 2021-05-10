@@ -61,18 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateHomePage" />
 
-    <Button
-        android:id="@+id/dailyTaskNavigation"
-        android:layout_width="425dp"
-        android:layout_height="425dp"
-        android:onClick="performDailyTask"
-        android:visibility="visible"
-        app:backgroundTint="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/completionCircle" />
-
     <ProgressBar
         android:id="@+id/completionCircle"
         style="?android:attr/progressBarStyleHorizontal"
@@ -87,6 +75,7 @@
         android:background="@drawable/circle_shape"
         android:indeterminate="false"
         android:max="100"
+        android:onClick="performDailyTask"
         android:progress="69"
         android:progressDrawable="@drawable/circular_progress_bar"
         app:layout_constraintBottom_toTopOf="@+id/NavigationBar"

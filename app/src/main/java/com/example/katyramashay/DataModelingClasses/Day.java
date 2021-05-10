@@ -54,6 +54,14 @@ public class Day {
         return taskList.get(index);
     }
 
+    /**
+     * returns the ArrayList of tasks for the day
+     * @return the ArrayList of tasks
+     */
+    public ArrayList getTasks() {
+        return taskList;
+    }
+
     public int getCompletionPercentage() {
         int completedTasks = 0;
 
