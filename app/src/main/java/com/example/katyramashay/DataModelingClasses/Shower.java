@@ -16,6 +16,7 @@ public class Shower extends Task {
      * creates the default constructor and sets completion to false
      */
     public Shower() {
+        super.setTaskName("Shower");
         completion = false;
     }
 

@@ -17,6 +17,7 @@ public class Exercise extends Task {
      * assigned to an empty string
      */
     public Exercise() {
+        super.setTaskName("Exercise");
         type = "";
     }
 

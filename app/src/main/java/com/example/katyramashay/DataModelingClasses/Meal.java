@@ -23,6 +23,7 @@ public class Meal extends Task{
      * creates the default constructor by setting all booleans to false
      */
     public Meal() {
+        super.setTaskName("Meal");
         vegetables = false;
         grains = false;
         dairy = false;

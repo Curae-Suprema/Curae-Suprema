@@ -19,6 +19,7 @@ public class Socialization extends Task {
      * creates the default constructor by setting all string to be empty
      */
     public Socialization() {
+        super.setTaskName("Socialization");
         people = new ArrayList<>();
         activity = "";
     }

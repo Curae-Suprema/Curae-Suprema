@@ -19,6 +19,7 @@ public class Sleep extends Task {
      * of sleep to the lowest rating
      */
     public Sleep() {
+        super.setTaskName("Sleep");
         quality = 1;
     }
 
