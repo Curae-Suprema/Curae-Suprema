@@ -95,5 +95,31 @@
     <string name="passwordEditStr">Change Password</string>
     <string name="settingsLabelStr">Account Settings</string>
     <string name="changeAccountInfoStr">Change Account Information</string>
+    <string name="mealsPageLabelStr">Meals</string>
+    <string name="mealQuesitonStr">What did you have today?</string>
+    <string name="mealNameHintStr">Enter meal name here</string>
+    <string name="foodPlateQuestionStr">What was in your meal?</string>
+    <string name="grainsStr">Grains</string>
+    <string name="fruitsStr">Fruits</string>
+    <string name="veggiesStr">Vegetables</string>
+    <string name="dairyStr">Dairy</string>
+    <string name="proteinStr">Protein</string>
+    <string name="exercisePageLabel">Exercise</string>
+    <string name="todo">TODO</string>
+    <string name="exerciseTypeQuestionStr">What exercise did you do today?</string>
+    <string name="exerciseTypeHintStr">Enter exercise name here</string>
+    <string name="durationAmtStr">Enter the duration here</string>
+    <string name="addCommentsLabelStr">Additional Comments</string>
+    <string name="durationLabelStr">Duration</string>
+    <string name="socialPageLabel">Socialization</string>
+    <string name="socialTypeQuestionStr">What activity did you do today?</string>
+    <string name="socialPeopleNamesStr">Who did you do the activity with?</string>
+    <string name="socialTypeHintStr">Enter activity name here</string>
+    <string name="socialPeopleNamesHintStr">Enter names here</string>
+    <string name="sleepPageLabelStr">Sleep</string>
+    <string name="sleepQualityQuestionStr">How well did you sleep last night?</string>
+    <string name="sleepQualityHintStr">Enter quality here</string>
+
+    <!-- Task Description Pages -->
 
 </resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Meals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corner_grey_no_transparency"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="140dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/mealsPageLabelStr"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mealsPageIconView"
+        android:layout_width="570dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/rounded_corner"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ImageView
+        android:id="@+id/mealsBackButton"
+        android:layout_width="85dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/backButtonDescriptionStr"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:id="@+id/mealsIconIdentifier"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="@string/mealsButtonDescriptor"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:srcCompat="@drawable/meal" />
+
+    <LinearLayout
+        android:id="@+id/descriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="240dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mealNameQuestion"
+            android:layout_width="570dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:text="@string/mealQuesitonStr"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mealName"
+            android:layout_width="570dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/mealNameHintStr"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textColorHint="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mealNameQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:text="@string/foodPlateQuestionStr"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/grainsCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/grainsStr"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/fruitsCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/fruitsStr"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/veggiesCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/veggiesStr"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/dairyCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/dairyStr"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/proteinCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/proteinStr"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
