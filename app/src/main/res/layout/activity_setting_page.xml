@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- hi -->
 
     <TextView
         android:id="@+id/settingsPageLabel"
@@ -145,7 +146,8 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/homeNavBarDescriptor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/homenavbar" />
+            app:srcCompat="@drawable/homenavbar"
+            />
 
         <ImageButton
             android:id="@+id/medicineNavBarButton"
@@ -155,7 +157,8 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/medicineLogNavBarDescriptor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/medicinenavbar" />
+            app:srcCompat="@drawable/medicinenavbar"
+            />
 
         <ImageButton
             android:id="@+id/settingsNavBarButton"
@@ -165,7 +168,8 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/settingsNavBarDescriptor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/settingsnavbarselected" />
+            app:srcCompat="@drawable/settingsnavbarselected"
+            />
 
     </LinearLayout>
 
