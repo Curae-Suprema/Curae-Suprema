@@ -1,19 +1,16 @@
 package com.example.katyramashay;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.katyramashay.DataModelingClasses.Controller;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
-
-import static java.text.DateFormat.getDateInstance;
 
 public class Home extends AppCompatActivity {
 
@@ -21,22 +18,28 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
         final Controller controller = (Controller) getApplicationContext();
-
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
+        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
         int percent = controller.getDay(date).getCompletionPercentage();
 
         TextView welcomeText = findViewById(R.id.welcomeHomePage);
-        String welcomeTextStr = "Welcome, " + controller.getFirstName() + "!";
-        welcomeText.setText(welcomeTextStr);
+        if (!controller.getFirstName().equals("")) {
+            String welcomeTextStr = "Welcome, " + controller.getFirstName() + "!";
+            welcomeText.setText(welcomeTextStr);
+        }
 
         TextView dateText = findViewById(R.id.dateHomePage);
         String dateTextStr = "Today is " + date;
         dateText.setText(dateTextStr);
 
         TextView completionText = findViewById(R.id.completionHomePage);
-        String completionTextStr = "You have completed " + percent + "% of your tasks today!";
+        String completionTextStr = "You have completed " + percent + "% of today's tasks";
         completionText.setText(completionTextStr);
 
         TextView completionPercentage = findViewById(R.id.completionPercentage);
@@ -47,7 +50,6 @@ public class Home extends AppCompatActivity {
         completionCircle.setProgress(percent);
 
         Toast.makeText(getApplicationContext(), "Click on the progress circle to view all your tasks for today!", Toast.LENGTH_SHORT).show();
-
     }
 
     public void performDailyTask(View v) {

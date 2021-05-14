@@ -6,6 +6,8 @@ package com.example.katyramashay.DataModelingClasses;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class Task {
 
@@ -73,8 +75,7 @@ public class Task {
      * @return the reminder date/time
      */
     public String getReminder() {
-        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm aa");
-        return sdf.format(reminder);
+        return new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(reminder);
     }
 
     /**

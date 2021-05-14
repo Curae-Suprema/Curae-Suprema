@@ -1,16 +1,11 @@
 package com.example.katyramashay.DataModelingClasses;
 
 import android.app.Application;
-
 import java.util.ArrayList;
 
 public class Controller extends Application {
 
-    //DATA
     private Patient patient = new Patient();
-
-
-    //METHODS
 
     /**
      * sets patient object to a user-specified patient

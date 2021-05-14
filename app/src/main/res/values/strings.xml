@@ -69,7 +69,7 @@
 
 
     <!-- Home Page Strings -->
-    <string name="welcomeHomePageStr">Welcome, _______!</string>
+    <string name="welcomeHomePageStr">Welcome!</string>
     <string name="dateHomePageStr">Today is ________ _____ __, ____.</string>
     <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
     <string name="completionPercentageStr">__%</string>

@@ -2,9 +2,6 @@ package com.example.katyramashay.DataModelingClasses;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 
@@ -23,10 +20,7 @@ public class Day {
      */
     public Day() {
         taskList = new ArrayList<>();
-        Calendar cal = Calendar.getInstance();
-        Date date = cal.getTime();
-        SimpleDateFormat sdf = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US);
-        dateStamp = sdf.format(date);
+        dateStamp = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
     }
 
     //METHODS

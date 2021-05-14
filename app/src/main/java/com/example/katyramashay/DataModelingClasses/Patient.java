@@ -14,6 +14,7 @@ public class Patient {
     private String lastName;
     private String birthday;
     private String location;
+    private Day defaultDay;
     private final ArrayList<Day> days;
     private final ArrayList<String> medications;
     private final ArrayList<String> allergies;
@@ -29,12 +30,10 @@ public class Patient {
         firstName = "";
         middleName = "";
         lastName = "";
-        Calendar dateStamp = Calendar.getInstance();
-        Date date = dateStamp.getTime();
-        SimpleDateFormat sdf = new SimpleDateFormat("MMMMMMMMM dd, yyyy", Locale.US);
-        birthday = sdf.format(date);
-        days = new ArrayList<>();
+        birthday = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
         location = "";
+        defaultDay = new Day();
+        days = new ArrayList<>();
         medications = new ArrayList<>();
         allergies = new ArrayList<>();
     }
@@ -118,8 +117,7 @@ public class Patient {
         Calendar dateStamp = Calendar.getInstance();
         dateStamp.set(year, month, day);
         Date date = dateStamp.getTime();
-        SimpleDateFormat sdf = new SimpleDateFormat("MMMMMMMMM dd, yyyy", Locale.US);
-        birthday = sdf.format(date);
+        birthday = new SimpleDateFormat("MMMM dd, yyyy", Locale.US).format(date);
     }
 
     public void setLocation(String loc) {
@@ -130,16 +128,26 @@ public class Patient {
         return location;
     }
 
+    public void setDefaultDay(Day day) {
+        defaultDay = day;
+    }
+
+    public Day getDefaultDay() {
+        return defaultDay;
+    }
+
     public void addDay(Day day) {
         days.add(day);
     }
 
     public Day getDay(String date) {
         for (int i = 0; i < days.size(); i++) {
-            if (date.equals(days.get(i).getDate()))
+            if (date.equals(days.get(i).getDate())) {
                 return days.get(i);
+            }
         }
-        return null;
+        days.add(new Day());
+        return days.get(days.size() - 1);
     }
 
     public ArrayList<String> getMedications() {

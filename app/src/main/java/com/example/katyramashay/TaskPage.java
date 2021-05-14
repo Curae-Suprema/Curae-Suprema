@@ -1,28 +1,30 @@
 package com.example.katyramashay;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.katyramashay.DataModelingClasses.Controller;
-import com.example.katyramashay.DataModelingClasses.Shower;
-
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import static java.text.DateFormat.getDateInstance;
-
 public class TaskPage extends AppCompatActivity {
+
+    String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_page);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+
+        final Controller controller = (Controller) getApplicationContext();
     }
 
     public void performTaskPage(View v) {
@@ -44,29 +46,5 @@ public class TaskPage extends AppCompatActivity {
         Intent intent = new Intent(this, Medications.class);
         startActivity(intent);
     }
-    final Controller aController = (Controller) getApplicationContext();
 
-    public void logShowerTask() {
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
-        aController.getDay(date).getTask(aController.getDay(date).getTasks().indexOf("Shower")).setCompletion(true);
-    }
-
-    public void logMealTask() {
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
-        aController.getDay(date).getTask(aController.getDay(date).getTasks().indexOf("Meal")).setCompletion(true);
-    }
-
-    public void logSleepTask() {
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
-        aController.getDay(date).getTask(aController.getDay(date).getTasks().indexOf("Sleep")).setCompletion(true);
-    }
-    public void logExerciseTask() {
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
-        aController.getDay(date).getTask(aController.getDay(date).getTasks().indexOf("Exercise")).setCompletion(true);
-    }
-
-    public void logSocializationTask() {
-        String date = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy", Locale.US).format(getDateInstance());
-        aController.getDay(date).getTask(aController.getDay(date).getTasks().indexOf("Socialization")).setCompletion(true);
-    }
 }
