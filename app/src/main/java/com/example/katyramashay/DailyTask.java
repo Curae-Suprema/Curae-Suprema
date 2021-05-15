@@ -20,6 +20,7 @@ public class DailyTask extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_task);
+        getSupportActionBar().hide();
     }
 
     @Override

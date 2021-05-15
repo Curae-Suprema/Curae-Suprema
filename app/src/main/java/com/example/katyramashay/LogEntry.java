@@ -12,6 +12,7 @@ public class LogEntry extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_entry);
+        getSupportActionBar().hide();
     }
 
     public void performDailyTask(View v) {

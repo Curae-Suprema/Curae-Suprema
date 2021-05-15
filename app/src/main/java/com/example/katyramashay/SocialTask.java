@@ -15,6 +15,7 @@ public class SocialTask extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_socials_task);
+        getSupportActionBar().hide();
     }
 
     @Override

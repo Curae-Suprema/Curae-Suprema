@@ -12,6 +12,7 @@ public class Medications extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medications);
+        getSupportActionBar().hide();
     }
 
     public void performTaskPage(View v) {
