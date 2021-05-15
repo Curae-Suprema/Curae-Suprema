@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Meals"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MealsTask">
 
     <TextView
         android:id="@+id/textView"
@@ -58,59 +60,185 @@
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:srcCompat="@drawable/meal" />
 
-    <LinearLayout
-        android:id="@+id/mealQuestions"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="240dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TextView
-            android:id="@+id/mealNameQuestion"
-            android:layout_width="570dp"
+            android:id="@+id/mealNameQ"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingTop="0dp"
-            android:paddingBottom="11dp"
+            android:layout_marginTop="50dp"
             android:text="@string/mealQuesitonStr"
             android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/mealName"
-            android:layout_width="570dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center_horizontal"
-            android:autofillHints=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:background="@drawable/rounded_corner"
-            android:ems="10"
             android:hint="@string/mealNameHintStr"
-            android:includeFontPadding="false"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:paddingLeft="20dp"
-            android:paddingEnd="0dp"
-            android:paddingRight="0dp"
+            android:padding="25dp"
             android:textColorHint="@color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealNameQ" />
 
         <TextView
-            android:id="@+id/mealNameQuestion2"
-            android:layout_width="match_parent"
+            android:id="@+id/mealContentQ"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingTop="50dp"
-            android:paddingBottom="20dp"
+            android:layout_marginTop="50dp"
             android:text="@string/foodPlateQuestionStr"
             android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealName" />
 
+        <CheckBox
+            android:id="@+id/grainsCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/grainsStr"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealContentQ" />
+
+        <CheckBox
+            android:id="@+id/fruitsCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/fruitsStr"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grainsCheck" />
+
+        <CheckBox
+            android:id="@+id/veggiesCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/veggiesStr"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruitsCheck" />
+
+        <CheckBox
+            android:id="@+id/dairyCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/dairyStr"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/veggiesCheck" />
+
+        <CheckBox
+            android:id="@+id/proteinCheck"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            android:text="@string/proteinStr"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dairyCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--
         <CheckBox
             android:id="@+id/grainsCheck"
             android:layout_width="390dp"
@@ -210,6 +338,6 @@
             android:paddingBottom="0dp"
             android:text="@string/proteinStr"
             android:textSize="24sp" />
-    </LinearLayout>
+    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
