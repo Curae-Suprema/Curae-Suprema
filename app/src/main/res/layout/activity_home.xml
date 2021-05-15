@@ -128,7 +128,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/dailyLogNavBarDescriptor"
-            android:onClick="performDailyLog"
+            android:onClick="performLogEntry"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/dailylognavbar" />
 

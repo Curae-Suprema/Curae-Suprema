@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Medications extends AppCompatActivity {
+public class LogEntry extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medications);
+        setContentView(R.layout.activity_log_entry);
+    }
+
+    public void performDailyTask(View v) {
+        Intent intent = new Intent(this, DailyTask.class);
+        startActivity(intent);
     }
 
     public void performTaskPage(View v) {

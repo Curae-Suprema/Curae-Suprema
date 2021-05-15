@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.katyramashay.DataModelingClasses.Controller;
 import java.text.SimpleDateFormat;
@@ -19,9 +20,18 @@ public class DailyTask extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_task);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
         final Controller controller = (Controller) getApplicationContext();
         String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+
+        TextView dateText = findViewById(R.id.dateTitle);
+        String dateTextStr = "Today is " + date;
+        dateText.setText(dateTextStr);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -36,8 +46,8 @@ public class DailyTask extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void performDailyLog(View v) {
-        Intent intent = new Intent(this, DailyTask.class);
+    public void performLogEntry(View v) {
+        Intent intent = new Intent(this, LogEntry.class);
         startActivity(intent);
     }
 

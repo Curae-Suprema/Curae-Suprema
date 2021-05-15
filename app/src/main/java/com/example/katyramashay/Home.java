@@ -62,8 +62,8 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void performDailyLog(View v) {
-        Intent intent = new Intent(this, DailyTask.class);
+    public void performLogEntry(View v) {
+        Intent intent = new Intent(this, LogEntry.class);
         startActivity(intent);
     }
 

@@ -27,13 +27,43 @@ public class TaskPage extends AppCompatActivity {
         final Controller controller = (Controller) getApplicationContext();
     }
 
+    public void performShower(View v) {
+        Intent intent = new Intent(this, ShowerTask.class);
+        startActivity(intent);
+    }
+
+    public void performMeals(View v) {
+        Intent intent = new Intent(this, MealsTask.class);
+        startActivity(intent);
+    }
+
+    public void performSleep(View v) {
+        Intent intent = new Intent(this, SleepTask.class);
+        startActivity(intent);
+    }
+
+    public void performExercise(View v) {
+        Intent intent = new Intent(this, ExerciseTask.class);
+        startActivity(intent);
+    }
+
+    public void performPeople(View v) {
+        Intent intent = new Intent(this, PeopleTask.class);
+        startActivity(intent);
+    }
+
+    public void performNewTask(View v) {
+        Intent intent = new Intent(this, NewTask.class);
+        startActivity(intent);
+    }
+
     public void performTaskPage(View v) {
         Intent intent = new Intent(this, TaskPage.class);
         startActivity(intent);
     }
 
-    public void performDailyLog(View v) {
-        Intent intent = new Intent(this, DailyTask.class);
+    public void performLogEntry(View v) {
+        Intent intent = new Intent(this, LogEntry.class);
         startActivity(intent);
     }
 
