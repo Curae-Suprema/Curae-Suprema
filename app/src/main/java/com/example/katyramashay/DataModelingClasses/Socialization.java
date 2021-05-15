@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Socialization extends Task {
 
     //DATA
-    private ArrayList<String> people;
+    private String people;
     private String activity;
 
 
@@ -20,7 +20,7 @@ public class Socialization extends Task {
      */
     public Socialization() {
         super.setTaskName("Socialization");
-        people = new ArrayList<>();
+        people = "";
         activity = "";
     }
 
@@ -32,16 +32,10 @@ public class Socialization extends Task {
      * @return people in the form of a string
      */
     public String getPeople() {
-        return people.toString();
+        return people;
     }
 
-    /**
-     * adds people to the list of people the activity was done with
-     * @param person name of someone who participated in the same activity
-     */
-    public void addPeople(String person) {
-        people.add(person);
-    }
+    public void setPeople(String people) { this.people = people; }
 
     /**
      * gets the name of the activity that the patient did

@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatyRamaShay">
-        <activity android:name=".PeopleTask"></activity>
         <activity android:name=".ExerciseTask" />
         <activity android:name=".ShowerTask" />
         <activity android:name=".LogEntry" />

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Exercise"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SocialTask" >
 
     <TextView
         android:id="@+id/exerciseName"
@@ -94,7 +96,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/exerciseType"
+            android:id="@+id/socialType"
             android:layout_width="570dp"
             android:layout_height="90dp"
             android:layout_gravity="center_horizontal"
@@ -112,7 +114,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/sleepDuration"
+            android:id="@+id/socialPeople"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
