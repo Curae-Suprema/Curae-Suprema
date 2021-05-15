@@ -6,13 +6,8 @@ package com.example.katyramashay.DataModelingClasses;
 
 public class Sleep extends Task {
 
-    //DATA
-
-    // quality of sleep is rated on a scale of 1-10
-    private int quality;
-
-
-    //CONSTRUCTOR
+    private String quality;
+    private String duration;
 
     /**
      * creates the default constructor by setting the quality
@@ -20,17 +15,15 @@ public class Sleep extends Task {
      */
     public Sleep() {
         super.setTaskName("Sleep");
-        quality = 1;
+        quality = "";
+        duration = "";
     }
-
-
-    //METHODS
 
     /**
      * gets the quality of sleep that the user had
      * @return sleep quality
      */
-    public int getQuality() {
+    public String getQuality() {
         return quality;
     }
 
@@ -38,8 +31,12 @@ public class Sleep extends Task {
      * sets the user's quality of sleep
      * @param quality quality on a scale of 1-10
      */
-    public void setQuality(int quality) {
+    public void setQuality(String quality) {
         this.quality = quality;
     }
+
+    public String getDuration() { return duration; }
+
+    public void setDuration(String duration) { this.duration = duration; }
 
 }
