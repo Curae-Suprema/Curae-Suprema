@@ -14,9 +14,4 @@ public class NewTask extends AppCompatActivity {
         setContentView(R.layout.activity_new_task);
     }
 
-    public void performBack(View v) {
-        Intent intent = new Intent(this, TaskPage.class);
-        startActivity(intent);
-    }
-
 }

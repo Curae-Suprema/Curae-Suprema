@@ -48,7 +48,7 @@ public class TaskPage extends AppCompatActivity {
     }
 
     public void performPeople(View v) {
-        Intent intent = new Intent(this, PeopleTask.class);
+        Intent intent = new Intent(this, SocialTask.class);
         startActivity(intent);
     }
 

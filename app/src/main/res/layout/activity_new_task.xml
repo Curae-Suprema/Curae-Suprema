@@ -21,21 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="70dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/backButtonDescriptionStr"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/newTaskTitle"
-        app:layout_constraintStart_toStartOf="@+id/nameOfTaskField"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbutton" />
-
     <EditText
         android:id="@+id/nameOfTaskField"
         android:layout_width="500dp"
