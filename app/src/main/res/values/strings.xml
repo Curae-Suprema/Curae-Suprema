@@ -114,6 +114,7 @@
     <string name="exerciseTypeHintStr">Enter exercise name here</string>
     <string name="durationAmtStr">Enter the duration here</string>
     <string name="addCommentsLabelStr">Additional Comments</string>
+    <string name="addCommentsStr">Add any additional comments here</string>
     <string name="durationLabelStr">Duration</string>
     <string name="socialPageLabel">Socialization</string>
     <string name="socialTypeQuestionStr">What activity did you do today?</string>
