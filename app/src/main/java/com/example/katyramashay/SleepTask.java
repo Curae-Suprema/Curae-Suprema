@@ -23,10 +23,10 @@ public class SleepTask extends AppCompatActivity {
         super.onStop();
 
         EditText sleepQuality = findViewById(R.id.sleepQuality);
-        String sleepQualityStr = sleepQuality + "";
+        String sleepQualityStr = sleepQuality.getText().toString();
 
         EditText sleepDuration = findViewById(R.id.duration);
-        String sleepDurationStr = sleepDuration + "";
+        String sleepDurationStr = sleepDuration.getText().toString();
 
         if (!sleepQualityStr.isEmpty() && !sleepDurationStr.isEmpty()) {
             Sleep sleep = new Sleep();
@@ -36,7 +36,7 @@ public class SleepTask extends AppCompatActivity {
             sleep.setDuration(sleepDurationStr);
 
             EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments + "";
+            String comments = addComments.getText().toString();
             sleep.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();

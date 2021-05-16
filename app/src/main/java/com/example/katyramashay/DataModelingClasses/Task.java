@@ -14,7 +14,7 @@ public class Task {
     //DATA
     private String taskName;
     private boolean completion;
-    private Calendar reminder;
+    private Date reminder;
     private String notes;
     private int lengthMin;
     private int lengthHours;
@@ -29,7 +29,7 @@ public class Task {
     public Task() {
         taskName = "";
         completion = false;
-        reminder = Calendar.getInstance();
+        reminder = new Date();
         notes = "";
         lengthMin = 0;
         lengthHours = 0;
@@ -75,17 +75,22 @@ public class Task {
      * @return the reminder date/time
      */
     public String getReminder() {
-        return new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(reminder);
+        return new SimpleDateFormat("hh:mm aa", Locale.US).format(reminder);
     }
 
-    /**
+    /**`
      * sets the reminder to a certain time of day
      * @param hour the hour value of the reminder
      * @param minute the minute value of the reminder
      */
     public void setReminder(int hour, int minute) {
-        reminder.set(Calendar.HOUR_OF_DAY, hour);
-        reminder.set(Calendar.MINUTE, minute);
+        Calendar time = Calendar.getInstance();
+        time.setTime(reminder);
+        time.set(Calendar.HOUR_OF_DAY, hour);
+        time.set(Calendar.MINUTE, minute);
+        time.set(Calendar.SECOND, 0);
+        time.set(Calendar.MILLISECOND, 0);
+        reminder = time.getTime();
     }
 
     /**

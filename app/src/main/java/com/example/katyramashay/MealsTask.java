@@ -24,7 +24,7 @@ public class MealsTask extends AppCompatActivity {
         super.onStop();
 
         EditText mealName = findViewById(R.id.mealName);
-        String mealNameStr = mealName + "";
+        String mealNameStr = mealName.getText().toString();
 
         if (!mealNameStr.isEmpty()) {
             Meal meal = new Meal();

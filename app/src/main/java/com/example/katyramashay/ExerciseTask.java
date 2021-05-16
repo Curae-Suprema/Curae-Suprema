@@ -23,7 +23,7 @@ public class ExerciseTask extends AppCompatActivity {
         super.onStop();
 
         EditText exerciseType = findViewById(R.id.exerciseType);
-        String exerciseTypeStr = exerciseType + "";
+        String exerciseTypeStr = exerciseType.getText().toString();
 
         if (!exerciseTypeStr.isEmpty()) {
             Exercise exercise = new Exercise();
@@ -31,7 +31,7 @@ public class ExerciseTask extends AppCompatActivity {
             exercise.setType(exerciseTypeStr);
 
             EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments + "";
+            String comments = addComments.getText().toString();
             exercise.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();

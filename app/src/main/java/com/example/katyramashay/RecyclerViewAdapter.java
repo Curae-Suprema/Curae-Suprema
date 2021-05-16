@@ -12,11 +12,17 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private ArrayList<Task> tasks = new ArrayList<>();
+    private final ArrayList<Task> tasks;
 
+    public RecyclerViewAdapter(ArrayList<Task> tasks) {
+        this.tasks = tasks;
+    }
+
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.daily_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.daily_item, parent, false);
         return new ViewHolder(v);
     }
 
@@ -33,21 +39,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return tasks.size();
     }
 
-    public void setTasks(ArrayList<Task> tasks) {
-        this.tasks = tasks;
-        notifyDataSetChanged();
-    }
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView taskTime;
-        public TextView taskName;
-        public CheckBox taskCheckBox;
+        private final TextView taskTime;
+        private final TextView taskName;
+        private final CheckBox taskCheckBox;
 
         ViewHolder(View itemView) {
             super(itemView);
-            taskTime = itemView.findViewById(R.id.taskTime);
-            taskName = itemView.findViewById(R.id.taskName);
-            taskCheckBox = itemView.findViewById(R.id.taskCheckBox);
+            taskTime = (TextView) itemView.findViewById(R.id.taskTime);
+            taskName = (TextView) itemView.findViewById(R.id.taskName);
+            taskCheckBox = (CheckBox) itemView.findViewById(R.id.taskCheckBox);
         }
     }
 }

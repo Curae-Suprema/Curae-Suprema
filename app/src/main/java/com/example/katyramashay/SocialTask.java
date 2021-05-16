@@ -23,7 +23,7 @@ public class SocialTask extends AppCompatActivity {
         super.onStop();
 
         EditText socialType = findViewById(R.id.socialType);
-        String socialTypeStr = socialType + "";
+        String socialTypeStr = socialType.getText().toString();
 
         if (!socialTypeStr.isEmpty()) {
             Socialization socialization = new Socialization();
@@ -31,11 +31,11 @@ public class SocialTask extends AppCompatActivity {
             socialization.setActivity(socialTypeStr);
 
             EditText socialNames = findViewById(R.id.socialNames);
-            String socialNamesStr = socialNames + "";
+            String socialNamesStr = socialNames.getText().toString();
             socialization.setPeople(socialNamesStr);
 
             EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments + "";
+            String comments = addComments.getText().toString();
             socialization.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();
