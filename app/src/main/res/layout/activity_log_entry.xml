@@ -281,7 +281,6 @@ tools:context=".LogEntry">
                 android:layout_width="550dp"
                 android:layout_height="140dp"
                 android:layout_marginTop="60dp"
-                android:autofillHints=""
                 android:background="@drawable/rounded_corner"
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
@@ -291,7 +290,8 @@ tools:context=".LogEntry">
                 android:textColorHint="#80000000"
                 app:layout_constraintEnd_toEndOf="@+id/followUpQuestionView"
                 app:layout_constraintStart_toStartOf="@+id/followUpQuestionView"
-                app:layout_constraintTop_toTopOf="@+id/followUpQuestionView" />
+                app:layout_constraintTop_toTopOf="@+id/followUpQuestionView"
+                android:importantForAutofill="no" />
 
             <TextView
                 android:id="@+id/painQuestionView2"
@@ -374,7 +374,6 @@ tools:context=".LogEntry">
                 android:layout_width="550dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="60dp"
-                android:autofillHints=""
                 android:background="@drawable/rounded_corner"
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
@@ -384,7 +383,8 @@ tools:context=".LogEntry">
                 android:textColorHint="#80000000"
                 app:layout_constraintEnd_toEndOf="@+id/painFollowUpQuestionView2"
                 app:layout_constraintStart_toStartOf="@+id/painFollowUpQuestionView2"
-                app:layout_constraintTop_toTopOf="@+id/painFollowUpQuestionView2" />
+                app:layout_constraintTop_toTopOf="@+id/painFollowUpQuestionView2"
+                android:importantForAutofill="no" />
 
 
             <TextView
@@ -406,7 +406,6 @@ tools:context=".LogEntry">
                 android:layout_width="550dp"
                 android:layout_height="140dp"
                 android:layout_marginTop="60dp"
-                android:autofillHints=""
                 android:background="@drawable/rounded_corner"
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
@@ -416,52 +415,14 @@ tools:context=".LogEntry">
                 android:textColorHint="#80000000"
                 app:layout_constraintEnd_toEndOf="@+id/additionalInfoQuestionView"
                 app:layout_constraintStart_toStartOf="@+id/additionalInfoQuestionView"
-                app:layout_constraintTop_toTopOf="@+id/additionalInfoQuestionView" />
+                app:layout_constraintTop_toTopOf="@+id/additionalInfoQuestionView"
+                android:importantForAutofill="no" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </ScrollView>
 
-<Button
-    android:id="@+id/viewLogEntriesButton"
-    android:layout_width="220dp"
-    android:layout_height="65dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginRight="16dp"
-    android:background="@drawable/rounded_corner"
-    android:text="@string/viewLogEntriesButtonStr"
-    app:backgroundTint="@color/projectRed"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/LogEntryScrollView" />
-
-<Button
-    android:id="@+id/doneButton"
-    android:layout_width="220dp"
-    android:layout_height="65dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/rounded_corner"
-    android:text="@string/doneButtonStr"
-    app:backgroundTint="@color/projectRed"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/LogEntryScrollView" />
-
-<ImageButton
-    android:id="@+id/scrollToBottomButton"
-    android:layout_width="92dp"
-    android:layout_height="82dp"
-    android:layout_marginTop="10dp"
-    android:background="@android:color/transparent"
-    android:contentDescription="@string/downArrowButtonDescriptionStr"
-    android:scaleType="fitCenter"
-    android:src="@drawable/down_red_arrow"
-    app:layout_constraintEnd_toStartOf="@+id/viewLogEntriesButton"
-    app:layout_constraintStart_toEndOf="@+id/doneButton"
-    app:layout_constraintTop_toBottomOf="@+id/LogEntryScrollView" />
-
-<LinearLayout
+    <LinearLayout
     android:id="@+id/NavigationBar"
     android:layout_width="match_parent"
     android:layout_height="90dp"

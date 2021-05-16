@@ -49,7 +49,6 @@
             android:layout_width="500dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:clickable="false"
             android:ems="7"
@@ -60,7 +59,8 @@
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
             android:paddingStart="20dp"
-            android:paddingEnd="0dp" />
+            android:paddingEnd="0dp"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/middleNameLabel"
@@ -77,7 +77,6 @@
             android:layout_width="500dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:clickable="false"
             android:ems="10"
@@ -88,7 +87,8 @@
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
             android:paddingStart="20dp"
-            android:paddingEnd="0dp" />
+            android:paddingEnd="0dp"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/lastNameLabel"
@@ -105,13 +105,13 @@
             android:layout_width="500dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:hint="@string/hintLastName"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/dateOfBirthLabel"
@@ -129,13 +129,13 @@
             android:layout_width="500dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:hint="@string/dateOfBirthStr"
             android:inputType="date"
             android:padding="20dp"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/locationLabel"
@@ -152,13 +152,13 @@
             android:layout_width="500dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:hint="@string/hintLocation"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/allergiesLabel"
@@ -175,13 +175,13 @@
             android:layout_width="500dp"
             android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:hint="@string/allergiesStr"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/medicationLabel"
@@ -198,13 +198,13 @@
             android:layout_width="500dp"
             android:layout_height="105dp"
             android:layout_gravity="center_horizontal"
-            android:autofillHints=""
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:hint="@string/medicationStr"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColorHint="@color/white" />
+            android:textColorHint="@color/white"
+            android:importantForAutofill="no" />
 
     </LinearLayout>
 
