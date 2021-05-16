@@ -285,13 +285,13 @@ tools:context=".LogEntry">
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
                 android:importantForAccessibility="no"
+                android:importantForAutofill="no"
                 android:inputType="textLongMessage"
                 android:padding="15dp"
-                android:textColorHint="#80000000"
+                android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/followUpQuestionView"
                 app:layout_constraintStart_toStartOf="@+id/followUpQuestionView"
-                app:layout_constraintTop_toTopOf="@+id/followUpQuestionView"
-                android:importantForAutofill="no" />
+                app:layout_constraintTop_toTopOf="@+id/followUpQuestionView" />
 
             <TextView
                 android:id="@+id/painQuestionView2"
@@ -378,13 +378,13 @@ tools:context=".LogEntry">
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
                 android:importantForAccessibility="no"
+                android:importantForAutofill="no"
                 android:inputType="textLongMessage"
                 android:padding="15dp"
-                android:textColorHint="#80000000"
+                android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/painFollowUpQuestionView2"
                 app:layout_constraintStart_toStartOf="@+id/painFollowUpQuestionView2"
-                app:layout_constraintTop_toTopOf="@+id/painFollowUpQuestionView2"
-                android:importantForAutofill="no" />
+                app:layout_constraintTop_toTopOf="@+id/painFollowUpQuestionView2" />
 
 
             <TextView
@@ -410,13 +410,13 @@ tools:context=".LogEntry">
                 android:gravity="start"
                 android:hint="@string/logEntryQuestionThreeHintStr"
                 android:importantForAccessibility="no"
+                android:importantForAutofill="no"
                 android:inputType="textLongMessage"
                 android:padding="15dp"
-                android:textColorHint="#80000000"
+                android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/additionalInfoQuestionView"
                 app:layout_constraintStart_toStartOf="@+id/additionalInfoQuestionView"
-                app:layout_constraintTop_toTopOf="@+id/additionalInfoQuestionView"
-                android:importantForAutofill="no" />
+                app:layout_constraintTop_toTopOf="@+id/additionalInfoQuestionView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
