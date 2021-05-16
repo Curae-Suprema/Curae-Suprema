@@ -2,8 +2,149 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Exercise"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowerTask">
+    tools:context=".SocialTask" >
+
+    <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corner_grey_no_transparency"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="140dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/showerPageLabel"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/socialPageIconView"
+        android:layout_width="570dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/rounded_corner"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/exerciseName"
+        app:layout_constraintEnd_toEndOf="@+id/exerciseName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/exerciseName"
+        app:layout_constraintTop_toTopOf="@+id/exerciseName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/exerciseIconIdentifier"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginRight="226dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/exerciseButtonDescriptor"
+        app:layout_constraintBottom_toBottomOf="@+id/socialPageIconView"
+        app:layout_constraintEnd_toEndOf="@+id/socialPageIconView"
+        app:layout_constraintStart_toStartOf="@+id/exerciseName"
+        app:srcCompat="@drawable/shower" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/socialActivityQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/showerQuestionStr"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/showerCompletionCheck"
+                android:layout_width="390dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner_grey"
+                android:button="@null"
+                android:checked="false"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:paddingStart="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="0dp"
+                android:text="@string/showerCompletionCheckStr"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/socialActivityQuestion" />
+
+            <TextView
+                android:id="@+id/addCommentsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="156dp"
+                android:text="@string/addCommentsLabelStr"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/socialActivityQuestion" />
+
+            <EditText
+                android:id="@+id/addComments"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_corner"
+                android:hint="@string/addCommentsStr"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="25dp"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCommentsLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
