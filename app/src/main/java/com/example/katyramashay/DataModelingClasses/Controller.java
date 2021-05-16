@@ -1,11 +1,15 @@
 package com.example.katyramashay.DataModelingClasses;
 
 import android.app.Application;
+
+import com.example.katyramashay.LogEntry;
+
 import java.util.ArrayList;
 
 public class Controller extends Application {
 
     private Patient patient = new Patient();
+    private ArrayList<LogEntry> entriesList;
 
     /**
      * sets patient object to a user-specified patient
@@ -161,4 +165,17 @@ public class Controller extends Application {
     public void removeAllergy(int index) {
         patient.removeAllergy(index);
     }
+
+    /**
+     * allows the user to add a log entry that they can record for that day
+     * @param log the log entry that the user filled out
+     */
+    public void addLogEntry(LogEntry log) { entriesList.add(log); }
+
+    /**
+     * returns the log entry of the index specified
+     * @param index the position in the arraylist of the log entry wanted
+     * @return the log entry that is stored at the user-specified index
+     */
+    public LogEntry getLogEntry(int index) { return entriesList.get(index); }
 }

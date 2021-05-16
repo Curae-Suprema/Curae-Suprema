@@ -64,7 +64,7 @@ public class TaskPage extends AppCompatActivity {
     }
 
     public void performLogEntry(View v) {
-        Intent intent = new Intent(this, LogEntry.class);
+        Intent intent = new Intent(this, LogEntryPage.class);
         startActivity(intent);
     }
 

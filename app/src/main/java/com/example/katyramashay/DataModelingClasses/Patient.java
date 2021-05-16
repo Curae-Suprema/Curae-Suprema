@@ -1,5 +1,7 @@
 package com.example.katyramashay.DataModelingClasses;
 
+import com.example.katyramashay.LogEntry;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -18,6 +20,8 @@ public class Patient {
     private final ArrayList<Day> days;
     private final ArrayList<String> medications;
     private final ArrayList<String> allergies;
+    private final ArrayList<LogEntry> entriesList;
+
 
 
     //CONSTRUCTOR
@@ -36,6 +40,7 @@ public class Patient {
         days = new ArrayList<>();
         medications = new ArrayList<>();
         allergies = new ArrayList<>();
+        entriesList = new ArrayList<>();
     }
 
     //METHODS

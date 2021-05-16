@@ -12,7 +12,7 @@
         android:theme="@style/Theme.KatyRamaShay">
         <activity android:name=".ExerciseTask" />
         <activity android:name=".ShowerTask" />
-        <activity android:name=".LogEntry" />
+        <activity android:name=".LogEntryPage" />
         <activity android:name=".Settings" />
         <activity android:name=".SleepTask" />
         <activity android:name=".SocialTask" />

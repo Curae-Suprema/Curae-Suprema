@@ -1,5 +1,7 @@
 package com.example.katyramashay.DataModelingClasses;
 
+import com.example.katyramashay.LogEntry;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -53,6 +55,11 @@ public class Day {
     /**
      * returns the ArrayList of tasks for the day
      * @return the ArrayList of tasks
+     */
+
+    /**
+     * returns the list of tasks that the user has completed during that day
+     * @return
      */
     public ArrayList getTasks() {
         return taskList;
