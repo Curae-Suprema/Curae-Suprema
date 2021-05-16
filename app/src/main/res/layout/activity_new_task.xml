@@ -150,7 +150,7 @@
     <EditText
         android:id="@+id/notesOfTaskField"
         android:layout_width="500dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
@@ -160,6 +160,7 @@
         android:clickable="false"
         android:ems="12"
         android:hint="@string/notesOfTaskHintStr"
+        android:importantForAutofill="no"
         android:inputType="textLongMessage"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"
@@ -170,21 +171,6 @@
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advancedTitle"
-        android:importantForAutofill="no" />
-
-    <ImageButton
-        android:id="@+id/makePermanentButton"
-        android:layout_width="500dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="36dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/makePermanentButtonContentDescriptionStr"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="@+id/notesOfTaskField"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/notesOfTaskField"
-        app:layout_constraintTop_toBottomOf="@+id/notesOfTaskField"
-        app:srcCompat="@drawable/makepermanent" />
+        app:layout_constraintTop_toBottomOf="@+id/advancedTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
