@@ -30,10 +30,8 @@
         android:layout_width="570dp"
         android:layout_height="125dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
         android:layout_marginBottom="59dp"
         android:background="@drawable/rounded_corner"
         android:foregroundGravity="center_horizontal"
@@ -49,9 +47,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="240dp"
-        android:layout_marginLeft="240dp"
         android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
         android:layout_marginBottom="4dp"
         android:contentDescription="@string/exerciseButtonDescriptor"
         app:layout_constraintBottom_toBottomOf="@+id/socialPageIconView"
@@ -130,6 +126,32 @@
                 app:layout_constraintTop_toBottomOf="@+id/socialActivityQuestion" />
 
             <TextView
+                android:id="@+id/timeQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/timeQuestionStr"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/socialType" />
+
+            <TimePicker
+                android:id="@+id/socialTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="186dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_corner"
+                android:theme="@style/Theme.KatyRamaShay"
+                android:timePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeQuestion2" />
+
+            <TextView
                 android:id="@+id/socialPeople"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -141,7 +163,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/socialType" />
+                app:layout_constraintTop_toBottomOf="@+id/socialTimePicker" />
 
             <EditText
                 android:id="@+id/socialNames"

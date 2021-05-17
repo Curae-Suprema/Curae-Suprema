@@ -119,8 +119,8 @@
     <string name="addCommentsStr">Add any additional comments here</string>
     <string name="durationLabelStr">Duration</string>
     <string name="socialPageLabel">Socialization</string>
-    <string name="socialTypeQuestionStr">What activity did you do today?</string>
-    <string name="socialPeopleNamesStr">Who did you do the activity with?</string>
+    <string name="socialTypeQuestionStr">What activity did/will you do today?</string>
+    <string name="socialPeopleNamesStr">Who did/will you do the activity with?</string>
     <string name="socialTypeHintStr">Enter activity name here</string>
     <string name="socialPeopleNamesHintStr">Enter names here</string>
     <string name="sleepPageLabelStr">Sleep</string>

@@ -81,7 +81,7 @@
                 android:id="@+id/exerciseCompletedButton"
                 android:layout_width="400dp"
                 android:layout_height="70dp"
-                android:layout_margin="30dp"
+                android:layout_margin="50dp"
                 android:background="@drawable/rounded_corner_grey"
                 android:button="@null"
                 android:checked="false"
@@ -105,7 +105,7 @@
                 android:id="@+id/exerciseQualityQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:text="@string/exerciseTypeQuestionStr"
                 android:textColor="@color/black"
                 android:textSize="30sp"
@@ -133,33 +133,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/exerciseQualityQuestion" />
 
             <TextView
-                android:id="@+id/timeQuestion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/exerciseTypeQuestionStr"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/exerciseType" />
-
-            <TimePicker
-                android:id="@+id/exerciseTimePicker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:timePickerMode="spinner"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeQuestion" />
-
-            <TextView
                 android:id="@+id/sleepDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
                 android:text="@string/durationLabelStr"
                 android:textColor="@color/black"
                 android:textSize="30sp"
@@ -167,7 +144,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/exerciseTimePicker" />
+                app:layout_constraintTop_toBottomOf="@+id/exerciseType" />
 
             <EditText
                 android:id="@+id/duration"
@@ -190,7 +167,7 @@
                 android:id="@+id/addCommentsLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:text="@string/addCommentsLabelStr"
                 android:textColor="@color/black"
                 android:textSize="30sp"
