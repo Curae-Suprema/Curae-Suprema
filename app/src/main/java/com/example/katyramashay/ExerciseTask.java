@@ -39,6 +39,8 @@ public class ExerciseTask extends AppCompatActivity {
         if (!exerciseTypeStr.isEmpty() || !comments.isEmpty()) {
             Exercise exercise = new Exercise();
 
+            exercise.setReminder(hour, minute);
+
             CheckBox exerciseCompletedButton = findViewById(R.id.exerciseCompletedButton);
             exercise.setCompletion(exerciseCompletedButton.isChecked());
 

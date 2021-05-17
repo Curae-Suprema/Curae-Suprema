@@ -3,6 +3,8 @@ package com.example.katyramashay;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TimePicker;
+
 import com.example.katyramashay.DataModelingClasses.Controller;
 import com.example.katyramashay.DataModelingClasses.Socialization;
 import java.text.SimpleDateFormat;
@@ -31,8 +33,15 @@ public class SocialTask extends AppCompatActivity {
         EditText addComments = findViewById(R.id.addComments);
         String comments = addComments.getText().toString();
 
+        TimePicker timepicker = (TimePicker) findViewById(R.id.socialTimePicker);
+
+        int hour = timepicker.getCurrentHour();
+        int minute = timepicker.getCurrentMinute();
+
         if (!socialTypeStr.isEmpty() || !socialNamesStr.isEmpty() || !comments.isEmpty()) {
             Socialization socialization = new Socialization();
+
+            socialization.setReminder(hour, minute);
 
             socialization.setActivity(socialTypeStr);
             socialization.setPeople(socialNamesStr);
