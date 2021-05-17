@@ -26,24 +26,21 @@ public class MealsTask extends AppCompatActivity {
         EditText mealName = findViewById(R.id.mealName);
         String mealNameStr = mealName.getText().toString();
 
-        if (!mealNameStr.isEmpty()) {
+        CheckBox grainsCheck = findViewById(R.id.grainsCheck);
+        CheckBox fruitsCheck = findViewById(R.id.fruitsCheck);
+        CheckBox veggiesCheck = findViewById(R.id.veggiesCheck);
+        CheckBox dairyCheck = findViewById(R.id.dairyCheck);
+        CheckBox proteinCheck = findViewById(R.id.proteinCheck);
+
+        if (!mealNameStr.isEmpty() || grainsCheck.isChecked() || fruitsCheck.isChecked() ||
+                veggiesCheck.isChecked() || dairyCheck.isChecked() || proteinCheck.isChecked()) {
             Meal meal = new Meal();
 
             meal.setTaskName(mealNameStr);
-
-            CheckBox grainsCheck = findViewById(R.id.grainsCheck);
             meal.setGrains(grainsCheck.isChecked());
-
-            CheckBox fruitsCheck = findViewById(R.id.fruitsCheck);
             meal.setFruits(fruitsCheck.isChecked());
-
-            CheckBox veggiesCheck = findViewById(R.id.veggiesCheck);
             meal.setVegetables(veggiesCheck.isChecked());
-
-            CheckBox dairyCheck = findViewById(R.id.dairyCheck);
             meal.setDairy(dairyCheck.isChecked());
-
-            CheckBox proteinCheck = findViewById(R.id.proteinCheck);
             meal.setProtein(proteinCheck.isChecked());
 
             final Controller controller = (Controller) getApplicationContext();
