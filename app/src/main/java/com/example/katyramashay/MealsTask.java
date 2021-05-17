@@ -36,7 +36,8 @@ public class MealsTask extends AppCompatActivity {
                 veggiesCheck.isChecked() || dairyCheck.isChecked() || proteinCheck.isChecked()) {
             Meal meal = new Meal();
 
-            meal.setTaskName(mealNameStr);
+            if (!mealNameStr.isEmpty())
+                meal.setTaskName(mealNameStr);
             meal.setGrains(grainsCheck.isChecked());
             meal.setFruits(fruitsCheck.isChecked());
             meal.setVegetables(veggiesCheck.isChecked());
