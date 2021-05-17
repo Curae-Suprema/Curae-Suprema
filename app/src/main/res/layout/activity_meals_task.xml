@@ -163,9 +163,9 @@
             android:id="@+id/LinearLayoutFruits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner_grey"
+            android:orientation="horizontal"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
             android:paddingTop="10dp"
@@ -175,7 +175,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutGrains" >
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutGrains">
 
             <TextView
                 android:id="@+id/fruitsText"
@@ -206,9 +206,9 @@
             android:id="@+id/LinearLayoutVeggies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner_grey"
+            android:orientation="horizontal"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
             android:paddingTop="10dp"
@@ -218,7 +218,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFruits" >
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFruits">
 
             <TextView
                 android:id="@+id/veggiesText"
@@ -249,9 +249,9 @@
             android:id="@+id/LinearLayoutDairy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner_grey"
+            android:orientation="horizontal"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
             android:paddingTop="10dp"
@@ -261,7 +261,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutVeggies" >
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutVeggies">
 
             <TextView
                 android:id="@+id/dairyText"
@@ -292,9 +292,9 @@
             android:id="@+id/LinearLayoutProtein"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner_grey"
+            android:orientation="horizontal"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
             android:paddingTop="10dp"
@@ -304,7 +304,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutDairy" >
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutDairy">
 
             <TextView
                 android:id="@+id/proteinText"
