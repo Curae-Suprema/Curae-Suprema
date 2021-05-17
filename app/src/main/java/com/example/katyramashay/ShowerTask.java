@@ -25,12 +25,13 @@ public class ShowerTask extends AppCompatActivity {
 
         CheckBox showerCompletionCheck = findViewById(R.id.showerCompletionCheck);
 
-        if (showerCompletionCheck.isChecked()) {
-            Shower shower = new Shower();
-            shower.setCompletion(true);
+        EditText addComments = findViewById(R.id.addComments);
+        String comments = addComments.getText().toString();
 
-            EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments.getText().toString();
+        if (showerCompletionCheck.isChecked() || !comments.isEmpty()) {
+            Shower shower = new Shower();
+
+            shower.setCompletion(true);
             shower.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();

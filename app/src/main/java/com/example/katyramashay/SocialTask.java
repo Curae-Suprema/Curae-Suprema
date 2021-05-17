@@ -25,17 +25,17 @@ public class SocialTask extends AppCompatActivity {
         EditText socialType = findViewById(R.id.socialType);
         String socialTypeStr = socialType.getText().toString();
 
-        if (!socialTypeStr.isEmpty()) {
+        EditText socialNames = findViewById(R.id.socialNames);
+        String socialNamesStr = socialNames.getText().toString();
+
+        EditText addComments = findViewById(R.id.addComments);
+        String comments = addComments.getText().toString();
+
+        if (!socialTypeStr.isEmpty() || !socialNamesStr.isEmpty() || !comments.isEmpty()) {
             Socialization socialization = new Socialization();
 
             socialization.setActivity(socialTypeStr);
-
-            EditText socialNames = findViewById(R.id.socialNames);
-            String socialNamesStr = socialNames.getText().toString();
             socialization.setPeople(socialNamesStr);
-
-            EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments.getText().toString();
             socialization.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();

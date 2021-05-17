@@ -26,16 +26,16 @@ public class ExerciseTask extends AppCompatActivity {
         EditText exerciseType = findViewById(R.id.exerciseType);
         String exerciseTypeStr = exerciseType.getText().toString();
 
-        if (!exerciseTypeStr.isEmpty()) {
+        EditText addComments = findViewById(R.id.addComments);
+        String comments = addComments.getText().toString();
+
+        if (!exerciseTypeStr.isEmpty() || !comments.isEmpty()) {
             Exercise exercise = new Exercise();
 
             CheckBox exerciseCompletedButton = findViewById(R.id.exerciseCompletedButton);
             exercise.setCompletion(exerciseCompletedButton.isChecked());
 
             exercise.setType(exerciseTypeStr);
-
-            EditText addComments = findViewById(R.id.addComments);
-            String comments = addComments.getText().toString();
             exercise.setNotes(comments);
 
             final Controller controller = (Controller) getApplicationContext();
