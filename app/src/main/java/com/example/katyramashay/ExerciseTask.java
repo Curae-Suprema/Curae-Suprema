@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TimePicker;
+
 import com.example.katyramashay.DataModelingClasses.Controller;
 import com.example.katyramashay.DataModelingClasses.Exercise;
 import java.text.SimpleDateFormat;
@@ -28,6 +30,11 @@ public class ExerciseTask extends AppCompatActivity {
 
         EditText addComments = findViewById(R.id.addComments);
         String comments = addComments.getText().toString();
+
+        TimePicker timepicker = (TimePicker) findViewById(R.id.exerciseTimePicker);
+
+        int hour = timepicker.getCurrentHour();
+        int minute = timepicker.getCurrentMinute();
 
         if (!exerciseTypeStr.isEmpty() || !comments.isEmpty()) {
             Exercise exercise = new Exercise();

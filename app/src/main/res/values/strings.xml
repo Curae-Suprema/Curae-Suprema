@@ -112,7 +112,7 @@
     <string name="todo">TODO</string>
     <string name="completedQuestionStr">Already completed?</string>
     <string name="exerciseTypeQuestionStr">What exercise did/will you do today?</string>
-    <string name="timeQuestionStr">When?</string>
+    <string name="timeQuestionStr">When did/will you perform the activity?</string>
     <string name="exerciseTypeHintStr">Enter exercise name here</string>
     <string name="durationAmtStr">Enter the duration here</string>
     <string name="addCommentsLabelStr">Additional Comments</string>
