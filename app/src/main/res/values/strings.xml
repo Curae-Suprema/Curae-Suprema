@@ -128,7 +128,7 @@
     <string name="sleepQualityHintStr">Enter sleep quality here</string>
     <string name="showerPageLabel">Shower</string>
     <string name="showerQuestionStr">Did you take a shower today?</string>
-    <string name="showerCompletionCheckStr">yes</string>
+    <string name="showerCompletionCheckStr">Yes</string>
 
     <!-- Task Description Pages -->
 
