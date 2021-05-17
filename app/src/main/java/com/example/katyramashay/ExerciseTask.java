@@ -2,6 +2,7 @@ package com.example.katyramashay;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import com.example.katyramashay.DataModelingClasses.Controller;
 import com.example.katyramashay.DataModelingClasses.Exercise;
@@ -27,6 +28,9 @@ public class ExerciseTask extends AppCompatActivity {
 
         if (!exerciseTypeStr.isEmpty()) {
             Exercise exercise = new Exercise();
+
+            CheckBox exerciseCompletedButton = findViewById(R.id.exerciseCompletedButton);
+            exercise.setCompletion(exerciseCompletedButton.isChecked());
 
             exercise.setType(exerciseTypeStr);
 

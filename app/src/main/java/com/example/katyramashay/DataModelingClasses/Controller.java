@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Controller extends Application {
 
     private Patient patient = new Patient();
-    private ArrayList<LogEntry> entriesList;
+    private ArrayList<LogEntry> entriesList = new ArrayList<>();
 
     /**
      * sets patient object to a user-specified patient
