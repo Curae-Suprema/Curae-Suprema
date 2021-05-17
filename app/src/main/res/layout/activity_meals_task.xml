@@ -116,228 +116,221 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mealName" />
 
-        <CheckBox
-            android:id="@+id/grainsCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/LinearLayoutGrains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
+            android:orientation="horizontal"
             android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
-            android:paddingTop="0dp"
+            android:paddingTop="10dp"
             android:paddingEnd="10dp"
             android:paddingRight="25dp"
             android:paddingBottom="0dp"
-            android:text="@string/grainsStr"
-            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mealContentQ" />
+            app:layout_constraintTop_toBottomOf="@+id/mealContentQ" >
 
-        <CheckBox
-            android:id="@+id/fruitsCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/fruitsStr"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/grainsCheck" />
+            <TextView
+                android:id="@+id/grainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/grainsStr"
+                android:textColor="#000000"
+                android:textSize="25sp" />
 
-        <CheckBox
-            android:id="@+id/veggiesCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/veggiesStr"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fruitsCheck" />
+            <CheckBox
+                android:id="@+id/grainsCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:buttonTint="#ba1b00"
+                android:checked="false"
+                android:padding="0dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                tools:targetApi="lollipop" />
 
-        <CheckBox
-            android:id="@+id/dairyCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/dairyStr"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/veggiesCheck" />
+        </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/proteinCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/LinearLayoutFruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
+            android:orientation="horizontal"
             android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
             android:paddingStart="25dp"
             android:paddingLeft="25dp"
-            android:paddingTop="0dp"
+            android:paddingTop="10dp"
             android:paddingEnd="10dp"
             android:paddingRight="25dp"
             android:paddingBottom="0dp"
-            android:text="@string/proteinStr"
-            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dairyCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutGrains" >
+
+            <TextView
+                android:id="@+id/fruitsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/fruitsStr"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/fruitsCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:buttonTint="#ba1b00"
+                android:checked="false"
+                android:padding="0dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVeggies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner_grey"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFruits" >
+
+            <TextView
+                android:id="@+id/veggiesText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/veggiesStr"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/veggiesCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:buttonTint="#ba1b00"
+                android:checked="false"
+                android:padding="0dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutDairy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner_grey"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutVeggies" >
+
+            <TextView
+                android:id="@+id/dairyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/dairyStr"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/dairyCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:buttonTint="#ba1b00"
+                android:checked="false"
+                android:padding="0dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner_grey"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayoutDairy" >
+
+            <TextView
+                android:id="@+id/proteinText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/proteinStr"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/proteinCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:buttonTint="#ba1b00"
+                android:checked="false"
+                android:padding="0dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--
-        <CheckBox
-            android:id="@+id/grainsCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/grainsStr"
-            android:textSize="24sp" />
-
-        <CheckBox
-            android:id="@+id/fruitsCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/fruitsStr"
-            android:textSize="24sp" />
-
-        <CheckBox
-            android:id="@+id/veggiesCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/veggiesStr"
-            android:textSize="24sp" />
-
-        <CheckBox
-            android:id="@+id/dairyCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/dairyStr"
-            android:textSize="24sp" />
-
-        <CheckBox
-            android:id="@+id/proteinCheck"
-            android:layout_width="390dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_corner_grey"
-            android:button="@null"
-            android:checked="false"
-            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
-            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-            android:paddingStart="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="0dp"
-            android:paddingEnd="10dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="0dp"
-            android:text="@string/proteinStr"
-            android:textSize="24sp" />
-    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
