@@ -81,7 +81,7 @@ public class NewTask extends AppCompatActivity {
         Task task = new Task();
         task.setCompletion(true);
 
-        TimePicker timepicker = (TimePicker) findViewById(R.id.socialTimePicker);
+        TimePicker timepicker = (TimePicker) findViewById(R.id.newTaskTimePicker);
 
         int hour = timepicker.getCurrentHour();
         int minute = timepicker.getCurrentMinute();
@@ -97,7 +97,7 @@ public class NewTask extends AppCompatActivity {
         task.setNotes(notes);
 
         final Controller controller = (Controller) getApplicationContext();
-        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date(year, month, day));
+        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
 
         controller.getDay(date).addTask(task);
 
