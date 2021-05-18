@@ -43,6 +43,10 @@ public class Day {
         taskList.add(task);
     }
 
+    public void setTask(Task task, int position) {
+        taskList.set(position, task);
+    }
+
     /**
      * returns the task that the user added to the day
      * @param index the position of the task in the taskList arrayList

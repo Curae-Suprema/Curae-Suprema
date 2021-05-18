@@ -75,7 +75,19 @@ public class Task {
      * @return the reminder date/time
      */
     public String getReminder() {
-        return new SimpleDateFormat("hh:mm aa", Locale.US).format(reminder);
+        return new SimpleDateFormat("h:mm aa", Locale.US).format(reminder);
+    }
+
+    public int getHour() {
+        Calendar time = Calendar.getInstance();
+        time.setTime(reminder);
+        return time.get(Calendar.HOUR_OF_DAY);
+    }
+
+    public int getMinute() {
+        Calendar time = Calendar.getInstance();
+        time.setTime(reminder);
+        return time.get(Calendar.MINUTE);
     }
 
     /**`

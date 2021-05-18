@@ -13,10 +13,8 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
 import com.example.katyramashay.DataModelingClasses.Controller;
-import com.example.katyramashay.DataModelingClasses.Day;
 import com.example.katyramashay.DataModelingClasses.Shower;
 import com.example.katyramashay.DataModelingClasses.Task;
 
@@ -30,10 +28,6 @@ public class NewTask extends AppCompatActivity {
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private static final String TAG = "NewTask";
-
-    int year;
-    int month;
-    int day;
 
 
     @Override
@@ -60,12 +54,11 @@ public class NewTask extends AppCompatActivity {
                 dialog.show();
             }
         });
+
         mDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker datePicker, int y, int m, int d) {
-                month = m + 1;
-                day = d;
-                year = y;
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                month = month + 1;
                 Log.d(TAG, "onDateSet: mm/dd/yyy: " + month + "/" + day + "/" + year);
                 String date = month + "/" + day + "/" + year;
                 mDisplayDate.setText(date);
@@ -79,20 +72,11 @@ public class NewTask extends AppCompatActivity {
         super.onStop();
 
         Task task = new Task();
-
-        TimePicker timepicker = (TimePicker) findViewById(R.id.newTaskTimePicker);
-
-        int hour = timepicker.getCurrentHour();
-        int minute = timepicker.getCurrentMinute();
-
-        task.setReminder(hour, minute);
+        task.setCompletion(true);
 
         EditText taskName = findViewById(R.id.nameOfTaskField);
         String name = taskName.getText().toString();
         task.setTaskName(name);
-
-        CheckBox newTaskCompletionButton = findViewById(R.id.newTaskCompletedButton);
-        task.setCompletion(newTaskCompletionButton.isChecked());
 
         EditText notesOfTask = findViewById(R.id.notesOfTaskField);
         String notes = notesOfTask.getText().toString();
