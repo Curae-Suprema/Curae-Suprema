@@ -13,8 +13,10 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 import com.example.katyramashay.DataModelingClasses.Controller;
+import com.example.katyramashay.DataModelingClasses.Day;
 import com.example.katyramashay.DataModelingClasses.Shower;
 import com.example.katyramashay.DataModelingClasses.Task;
 
@@ -28,6 +30,10 @@ public class NewTask extends AppCompatActivity {
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private static final String TAG = "NewTask";
+
+    int year;
+    int month;
+    int day;
 
 
     @Override
@@ -54,11 +60,12 @@ public class NewTask extends AppCompatActivity {
                 dialog.show();
             }
         });
-
         mDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                month = month + 1;
+            public void onDateSet(DatePicker datePicker, int y, int m, int d) {
+                month = m + 1;
+                day = d;
+                year = y;
                 Log.d(TAG, "onDateSet: mm/dd/yyy: " + month + "/" + day + "/" + year);
                 String date = month + "/" + day + "/" + year;
                 mDisplayDate.setText(date);
@@ -74,6 +81,13 @@ public class NewTask extends AppCompatActivity {
         Task task = new Task();
         task.setCompletion(true);
 
+        TimePicker timepicker = (TimePicker) findViewById(R.id.socialTimePicker);
+
+        int hour = timepicker.getCurrentHour();
+        int minute = timepicker.getCurrentMinute();
+
+        task.setReminder(hour, minute);
+
         EditText taskName = findViewById(R.id.nameOfTaskField);
         String name = taskName.getText().toString();
         task.setTaskName(name);
@@ -83,7 +97,8 @@ public class NewTask extends AppCompatActivity {
         task.setNotes(notes);
 
         final Controller controller = (Controller) getApplicationContext();
-        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date(year, month, day));
+
         controller.getDay(date).addTask(task);
 
     }

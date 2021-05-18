@@ -11,7 +11,7 @@
         android:id="@+id/newTaskTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:text="@string/newTaskPageTitleStr"
         android:textColor="#000000"
         android:textSize="40sp"
@@ -27,13 +27,14 @@
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/rounded_corner"
         android:clickable="false"
         android:ems="12"
         android:hint="@string/nameOfTaskHintStr"
+        android:importantForAutofill="no"
         android:inputType="textShortMessage"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"
@@ -44,12 +45,11 @@
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newTaskTitle"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/newTaskTitle" />
 
     <TextView
         android:id="@+id/dateOfTaskField"
-        android:layout_width="235dp"
+        android:layout_width="500dp"
         android:layout_height="101dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/rounded_corner"
@@ -66,59 +66,48 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="35sp"
-        app:layout_constraintEnd_toStartOf="@+id/timeOfTaskField"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfTaskField"
         app:layout_constraintStart_toStartOf="@+id/nameOfTaskField"
         app:layout_constraintTop_toBottomOf="@+id/nameOfTaskField" />
 
-    <EditText
+    <TextView
         android:id="@+id/timeOfTaskField"
-        android:layout_width="235dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:background="@drawable/rounded_corner"
-        android:clickable="false"
-        android:ems="12"
-        android:hint="@string/timeOfTaskHintStr"
-        android:inputType="textShortMessage|time"
-        android:paddingLeft="15dp"
-        android:paddingTop="20dp"
-        android:paddingRight="15dp"
-        android:paddingBottom="20dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="@id/nameOfTaskField"
-        app:layout_constraintTop_toBottomOf="@+id/nameOfTaskField"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/reminderOfTaskField"
         android:layout_width="500dp"
-        android:layout_height="100dp"
+        android:layout_height="78dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/rounded_corner"
         android:clickable="false"
         android:ems="12"
-        android:hint="@string/reminderOfTaskHintStr"
-        android:inputType="date|datetime|textPersonName"
+        android:gravity="center_horizontal|top"
+        android:importantForAutofill="no"
+        android:inputType="none"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"
         android:paddingRight="15dp"
         android:paddingBottom="20dp"
-        android:textColor="#FFFFFF"
+        android:text="@string/timeOfTaskHintStr"
+        android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateOfTaskField"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/dateOfTaskField" />
+
+    <TimePicker
+        android:id="@+id/newTaskTimePicker"
+        android:layout_width="259dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner"
+        android:theme="@style/Theme.KatyRamaShay"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeOfTaskField" />
 
     <EditText
         android:id="@+id/advancedTitle"
@@ -126,7 +115,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/rounded_corner_grey"
@@ -134,6 +123,7 @@
         android:ems="12"
         android:gravity="center"
         android:hint="@string/advancedTitleStr"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
         android:paddingTop="20dp"
@@ -145,8 +135,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reminderOfTaskField"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/newTaskTimePicker" />
 
     <EditText
         android:id="@+id/notesOfTaskField"
