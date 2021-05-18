@@ -73,6 +73,7 @@
     <string name="dateHomePageStr">Today is ________ _____ __, ____.</string>
     <string name="completionHomePageStr">You have completed __% of your tasks today!</string>
     <string name="completionPercentageStr">__%</string>
+    <string name="viewScheduleStr">Click to see your day!</string>
     <string name="medicationTitleStr">Medication</string>
 
     <!-- Medication Page -->

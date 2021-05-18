@@ -88,6 +88,7 @@
         android:id="@+id/completionPercentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
         android:text="@string/completionPercentageStr"
         android:textColor="#000000"
         android:textSize="100sp"
@@ -165,5 +166,18 @@
             app:srcCompat="@drawable/settingsnavbar" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewScheduleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/viewScheduleStr"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/completionCircle"
+        app:layout_constraintStart_toStartOf="@+id/completionCircle"
+        app:layout_constraintTop_toBottomOf="@+id/completionPercentage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
