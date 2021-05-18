@@ -79,7 +79,6 @@ public class NewTask extends AppCompatActivity {
         super.onStop();
 
         Task task = new Task();
-        task.setCompletion(true);
 
         TimePicker timepicker = (TimePicker) findViewById(R.id.newTaskTimePicker);
 
@@ -92,13 +91,15 @@ public class NewTask extends AppCompatActivity {
         String name = taskName.getText().toString();
         task.setTaskName(name);
 
+        CheckBox newTaskCompletionButton = findViewById(R.id.newTaskCompletedButton);
+        task.setCompletion(newTaskCompletionButton.isChecked());
+
         EditText notesOfTask = findViewById(R.id.notesOfTaskField);
         String notes = notesOfTask.getText().toString();
         task.setNotes(notes);
 
         final Controller controller = (Controller) getApplicationContext();
         String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
-
         controller.getDay(date).addTask(task);
 
     }
