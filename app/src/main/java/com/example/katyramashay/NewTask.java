@@ -84,7 +84,8 @@ public class NewTask extends AppCompatActivity {
 
         final Controller controller = (Controller) getApplicationContext();
         String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
-        controller.getDay(date).addTask(task);
+        if(!name.isEmpty())
+            controller.getDay(date).addTask(task);
 
     }
 
