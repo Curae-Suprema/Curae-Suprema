@@ -1,10 +1,8 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
 /**
  * this class models the behavior of the social activities that a patient does
  */
-
-import java.util.ArrayList;
 
 public class Socialization extends Task {
 

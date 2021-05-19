@@ -1,8 +1,8 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
 import android.app.Application;
 
-import com.example.katyramashay.LogEntry;
+import com.example.CuraeSuprema.LogEntry;
 
 import java.util.ArrayList;
 

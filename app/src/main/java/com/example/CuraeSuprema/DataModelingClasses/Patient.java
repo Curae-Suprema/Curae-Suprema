@@ -1,6 +1,6 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
-import com.example.katyramashay.LogEntry;
+import com.example.CuraeSuprema.LogEntry;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

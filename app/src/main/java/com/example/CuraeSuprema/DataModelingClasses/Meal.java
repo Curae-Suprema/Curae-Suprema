@@ -1,4 +1,4 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
 /**
  * this class models the behavior of the meals a patient eats in a day,

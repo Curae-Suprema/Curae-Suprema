@@ -1,4 +1,4 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,13 +6,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 
-import com.example.katyramashay.DataModelingClasses.Controller;
-import com.example.katyramashay.DataModelingClasses.Shower;
+import com.example.CuraeSuprema.DataModelingClasses.Controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

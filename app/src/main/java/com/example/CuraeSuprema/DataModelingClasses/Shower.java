@@ -1,4 +1,4 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
 /**
  * this class models whether or not the patient took a shower

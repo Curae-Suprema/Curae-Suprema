@@ -1,4 +1,4 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,12 +7,12 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.katyramashay.DataModelingClasses.Exercise;
-import com.example.katyramashay.DataModelingClasses.Meal;
-import com.example.katyramashay.DataModelingClasses.Shower;
-import com.example.katyramashay.DataModelingClasses.Sleep;
-import com.example.katyramashay.DataModelingClasses.Socialization;
-import com.example.katyramashay.DataModelingClasses.Task;
+import com.example.CuraeSuprema.DataModelingClasses.Exercise;
+import com.example.CuraeSuprema.DataModelingClasses.Meal;
+import com.example.CuraeSuprema.DataModelingClasses.Shower;
+import com.example.CuraeSuprema.DataModelingClasses.Sleep;
+import com.example.CuraeSuprema.DataModelingClasses.Socialization;
+import com.example.CuraeSuprema.DataModelingClasses.Task;
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {

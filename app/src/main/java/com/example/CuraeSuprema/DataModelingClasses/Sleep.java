@@ -1,4 +1,4 @@
-package com.example.katyramashay.DataModelingClasses;
+package com.example.CuraeSuprema.DataModelingClasses;
 
 /**
  * this class models the sleep quality of a patient

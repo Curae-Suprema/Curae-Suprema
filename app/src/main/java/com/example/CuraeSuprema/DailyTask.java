@@ -1,4 +1,4 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,13 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.example.katyramashay.DataModelingClasses.Controller;
-import com.example.katyramashay.DataModelingClasses.Exercise;
-import com.example.katyramashay.DataModelingClasses.Meal;
-import com.example.katyramashay.DataModelingClasses.Shower;
-import com.example.katyramashay.DataModelingClasses.Sleep;
-import com.example.katyramashay.DataModelingClasses.Socialization;
-import com.example.katyramashay.DataModelingClasses.Task;
+import com.example.CuraeSuprema.DataModelingClasses.Controller;
+import com.example.CuraeSuprema.DataModelingClasses.Exercise;
+import com.example.CuraeSuprema.DataModelingClasses.Meal;
+import com.example.CuraeSuprema.DataModelingClasses.Shower;
+import com.example.CuraeSuprema.DataModelingClasses.Sleep;
+import com.example.CuraeSuprema.DataModelingClasses.Socialization;
+import com.example.CuraeSuprema.DataModelingClasses.Task;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

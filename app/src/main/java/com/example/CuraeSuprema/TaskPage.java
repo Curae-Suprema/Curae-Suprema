@@ -1,10 +1,10 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import com.example.katyramashay.DataModelingClasses.Controller;
+import com.example.CuraeSuprema.DataModelingClasses.Controller;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;

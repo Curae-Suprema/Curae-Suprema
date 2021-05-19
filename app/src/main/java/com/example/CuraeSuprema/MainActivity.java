@@ -1,9 +1,9 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import com.example.katyramashay.DataModelingClasses.Patient;
+import com.example.CuraeSuprema.DataModelingClasses.Patient;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

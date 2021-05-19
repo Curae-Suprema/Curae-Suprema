@@ -1,4 +1,4 @@
-package com.example.katyramashay;
+package com.example.CuraeSuprema;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
@@ -10,15 +10,15 @@ import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import com.example.katyramashay.DataModelingClasses.Controller;
-import com.example.katyramashay.DataModelingClasses.Task;
+import com.example.CuraeSuprema.DataModelingClasses.Controller;
+import com.example.CuraeSuprema.DataModelingClasses.Task;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import static com.example.katyramashay.DailyTask.EXTRA_ID;
-import static com.example.katyramashay.DailyTask.EXTRA_POSITION;
+import static com.example.CuraeSuprema.DailyTask.EXTRA_ID;
+import static com.example.CuraeSuprema.DailyTask.EXTRA_POSITION;
 
 public class NewTask extends AppCompatActivity {
 
