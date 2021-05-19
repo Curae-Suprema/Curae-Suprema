@@ -13,7 +13,6 @@ import com.example.katyramashay.DataModelingClasses.Shower;
 import com.example.katyramashay.DataModelingClasses.Sleep;
 import com.example.katyramashay.DataModelingClasses.Socialization;
 import com.example.katyramashay.DataModelingClasses.Task;
-
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
@@ -39,11 +38,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.taskTime.setText(task.getReminder());
         holder.taskName.setText(task.getTaskName());
         holder.taskCheckBox.setChecked(task.getCompletion());
+
+        holder.taskCheckBox.setOnClickListener(view ->
+                task.setCompletion(holder.taskCheckBox.isChecked()));
     }
 
     @Override
     public int getItemCount() {
         return tasks.size();
+    }
+
+    public ArrayList<Task> getTasks() {
+        return tasks;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -71,6 +77,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                         listener.onItemClick((Exercise) t, position);
                     else if (t instanceof Socialization)
                         listener.onItemClick((Socialization) t, position);
+                    else
+                        listener.onItemClick(t, position);
                 }
             });
         }
@@ -82,6 +90,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         void onItemClick(Sleep sleep, int position);
         void onItemClick(Exercise exercise, int position);
         void onItemClick(Socialization socialization, int position);
+        void onItemClick(Task task, int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {

@@ -13,7 +13,10 @@ import com.example.katyramashay.DataModelingClasses.Meal;
 import com.example.katyramashay.DataModelingClasses.Shower;
 import com.example.katyramashay.DataModelingClasses.Sleep;
 import com.example.katyramashay.DataModelingClasses.Socialization;
+import com.example.katyramashay.DataModelingClasses.Task;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -23,6 +26,7 @@ public class DailyTask extends AppCompatActivity {
     public static final int EDIT_TASK_REQUEST = 2;
     public static final String EXTRA_ID = "EXTRA_ID";
     public static final String EXTRA_POSITION = "EXTRA_POSITION";
+    private ArrayList<Task> tasks = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +40,10 @@ public class DailyTask extends AppCompatActivity {
 
         final Controller controller = (Controller) getApplicationContext();
         String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+        tasks = controller.getDay(date).getTasks();
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(controller.getDay(date).getTasks());
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(tasks);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -90,7 +95,23 @@ public class DailyTask extends AppCompatActivity {
                 startActivityForResult(intent, EDIT_TASK_REQUEST);
             }
 
+            @Override
+            public void onItemClick(Task task, int position) {
+                Intent intent = new Intent(DailyTask.this, NewTask.class);
+                intent.putExtra(EXTRA_ID, EDIT_TASK_REQUEST);
+                intent.putExtra(EXTRA_POSITION, position);
+                startActivityForResult(intent, EDIT_TASK_REQUEST);
+            }
+
         });
+    }
+
+    public void onStop() {
+        super.onStop();
+
+        final Controller controller = (Controller) getApplicationContext();
+        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+        controller.getDay(date).setTasks(tasks);
     }
 
     public void performTaskPage(View v) {

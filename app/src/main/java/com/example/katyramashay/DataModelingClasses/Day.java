@@ -10,7 +10,7 @@ import java.util.Locale;
 public class Day {
 
    //DATA
-    private final ArrayList<Task> taskList;
+    private ArrayList<Task> taskList;
     private final String dateStamp;
 
     //CONSTRUCTOR
@@ -45,6 +45,10 @@ public class Day {
 
     public void setTask(Task task, int position) {
         taskList.set(position, task);
+    }
+
+    public void setTasks(ArrayList<Task> tasks) {
+        taskList = tasks;
     }
 
     /**
