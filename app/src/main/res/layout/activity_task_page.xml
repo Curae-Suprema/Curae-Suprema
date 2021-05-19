@@ -191,6 +191,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/settingsNavBarDescriptor"
+            android:onClick="performSettings"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/settingsnavbar" />
 

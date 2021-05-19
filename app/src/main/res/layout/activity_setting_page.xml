@@ -125,6 +125,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/taskNavBarDescriptor"
+            android:onClick="performTaskPage"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/tasknavbar" />
 
@@ -135,6 +136,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/dailyLogNavBarDescriptor"
+            android:onClick="performLogEntry"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/dailylognavbar" />
 
@@ -145,9 +147,9 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/homeNavBarDescriptor"
+            android:onClick="performHome"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/homenavbar"
-            />
+            app:srcCompat="@drawable/homenavbar" />
 
         <ImageButton
             android:id="@+id/medicineNavBarButton"
@@ -156,9 +158,9 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/medicineLogNavBarDescriptor"
+            android:onClick="performMedications"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/medicinenavbar"
-            />
+            app:srcCompat="@drawable/medicinenavbar" />
 
         <ImageButton
             android:id="@+id/settingsNavBarButton"
@@ -167,9 +169,9 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/settingsNavBarDescriptor"
+            android:onClick="performSettings"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/settingsnavbarselected"
-            />
+            app:srcCompat="@drawable/settingsnavbarselected" />
 
     </LinearLayout>
 

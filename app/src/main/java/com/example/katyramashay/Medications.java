@@ -34,4 +34,9 @@ public class Medications extends AppCompatActivity {
         Intent intent = new Intent(this, Medications.class);
         startActivity(intent);
     }
+
+    public void performSettings(View v) {
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
 }

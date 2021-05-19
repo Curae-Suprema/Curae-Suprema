@@ -499,15 +499,16 @@ tools:context=".LogEntryPage">
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/medicinenavbar" />
 
-    <ImageButton
-        android:id="@+id/settingsNavBarButton"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/settingsNavBarDescriptor"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/settingsnavbar" />
+        <ImageButton
+            android:id="@+id/settingsNavBarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/settingsNavBarDescriptor"
+            android:onClick="performSettings"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/settingsnavbar" />
 
 </LinearLayout>
 

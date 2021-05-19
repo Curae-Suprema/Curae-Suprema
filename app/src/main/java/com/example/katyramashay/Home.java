@@ -75,4 +75,8 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void performSettings(View v) {
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
 }
