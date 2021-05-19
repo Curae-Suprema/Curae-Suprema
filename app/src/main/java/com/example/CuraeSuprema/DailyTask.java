@@ -22,6 +22,7 @@ import java.util.Locale;
 
 public class DailyTask extends AppCompatActivity {
 
+
     public static final int ADD_TASK_REQUEST = 1;
     public static final int EDIT_TASK_REQUEST = 2;
     public static final String EXTRA_ID = "EXTRA_ID";
