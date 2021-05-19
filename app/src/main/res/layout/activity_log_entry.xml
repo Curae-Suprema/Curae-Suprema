@@ -6,25 +6,25 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".LogEntryPage">
 
-<TextView
-    android:id="@+id/logEntryTitle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:text="@string/logEntryTitleStr"
-    android:textColor="#000000"
-    android:textSize="40sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/logEntryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/logEntryTitleStr"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/LogEntryScrollView"
         android:layout_width="match_parent"
         android:layout_height="735dp"
-        android:paddingBottom="30dp"
+        android:paddingBottom="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@ tools:context=".LogEntryPage">
                     android:id="@+id/mentalHealthQuestionView"
                     android:layout_width="575dp"
                     android:layout_height="200dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/rounded_corner_grey"
                     android:gravity="center_horizontal"
                     android:padding="15dp"
