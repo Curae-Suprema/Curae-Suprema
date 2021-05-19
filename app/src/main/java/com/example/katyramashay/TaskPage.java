@@ -28,6 +28,11 @@ public class TaskPage extends AppCompatActivity {
         final Controller controller = (Controller) getApplicationContext();
     }
 
+    public void performDailyTask(View v) {
+        Intent intent = new Intent(this, DailyTask.class);
+        startActivity(intent);
+    }
+
     public void performShower(View v) {
         Intent intent = new Intent(this, ShowerTask.class);
         startActivity(intent);

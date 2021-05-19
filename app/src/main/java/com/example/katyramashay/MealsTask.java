@@ -65,6 +65,9 @@ public class MealsTask extends AppCompatActivity {
         CheckBox dairyCheck = findViewById(R.id.dairyCheck);
         CheckBox proteinCheck = findViewById(R.id.proteinCheck);
 
+        CheckBox mealsCompletedButton = findViewById(R.id.mealsCompletedButton);
+        meal.setCompletion(mealsCompletedButton.isChecked());
+
         if (!mealNameStr.isEmpty() || grainsCheck.isChecked() || fruitsCheck.isChecked() ||
                 veggiesCheck.isChecked() || dairyCheck.isChecked() || proteinCheck.isChecked()) {
 

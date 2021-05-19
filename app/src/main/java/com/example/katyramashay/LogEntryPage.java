@@ -3,10 +3,12 @@ package com.example.katyramashay;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 
 import com.example.katyramashay.DataModelingClasses.Controller;
@@ -57,39 +59,228 @@ public class LogEntryPage extends AppCompatActivity {
             controller.addLogEntry(log);
     }
 
+
     public void terribleButton(View v) {
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.RED);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("terrible");
     }
 
     public void verySadButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.RED);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("very sad");
     }
 
     public void sadButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.RED);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("sad");
     }
 
     public void slightlySadButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.RED);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("slightly sad");
     }
 
     public void neutralButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.RED);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("neutral");
     }
 
     public void slightlyHappyButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.RED);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("slightly happy");
     }
 
     public void happyButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.RED);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("happy");
     }
 
     public void veryHappyButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.RED);
+        smiling.setBackgroundColor(Color.TRANSPARENT);
+
         log.setMentalHealth("very happy");
     }
 
     public void amazingButton(View v) {
+
+        ImageButton terrible = (ImageButton) findViewById(R.id.cryingButton);
+        ImageButton verySad = (ImageButton) findViewById(R.id.slightlyCryingButton);
+        ImageButton sad = (ImageButton) findViewById(R.id.verySadButton);
+        ImageButton slightlySad = (ImageButton) findViewById(R.id.slightlySadButton);
+        ImageButton neutral = (ImageButton) findViewById(R.id.neutralButton);
+        ImageButton slightlyHappy = (ImageButton) findViewById(R.id.slightlyHappyButton);
+        ImageButton happy = (ImageButton) findViewById(R.id.happyButton);
+        ImageButton veryHappy = (ImageButton) findViewById(R.id.slightlySmilingButton);
+        ImageButton smiling = (ImageButton) findViewById(R.id.smilingButton);
+
+        terrible.setBackgroundColor(Color.TRANSPARENT);
+        verySad.setBackgroundColor(Color.TRANSPARENT);
+        sad.setBackgroundColor(Color.TRANSPARENT);
+        slightlySad.setBackgroundColor(Color.TRANSPARENT);
+        neutral.setBackgroundColor(Color.TRANSPARENT);
+        slightlyHappy.setBackgroundColor(Color.TRANSPARENT);
+        happy.setBackgroundColor(Color.TRANSPARENT);
+        veryHappy.setBackgroundColor(Color.TRANSPARENT);
+        smiling.setBackgroundColor(Color.RED);
+
         log.setMentalHealth("amazing");
     }
 

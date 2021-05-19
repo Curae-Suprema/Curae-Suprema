@@ -97,6 +97,19 @@
         app:layout_constraintStart_toStartOf="@+id/completionCircle"
         app:layout_constraintTop_toTopOf="@+id/completionCircle" />
 
+    <TextView
+        android:id="@+id/viewScheduleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/viewScheduleStr"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/completionCircle"
+        app:layout_constraintStart_toStartOf="@+id/completionCircle"
+        app:layout_constraintTop_toBottomOf="@+id/completionPercentage" />
+
     <LinearLayout
         android:id="@+id/NavigationBar"
         android:layout_width="match_parent"
@@ -166,18 +179,5 @@
             app:srcCompat="@drawable/settingsnavbar" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/viewScheduleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/viewScheduleStr"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/completionCircle"
-        app:layout_constraintStart_toStartOf="@+id/completionCircle"
-        app:layout_constraintTop_toBottomOf="@+id/completionPercentage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -111,6 +111,21 @@
         app:layout_constraintTop_toBottomOf="@+id/exerciseButton"
         app:srcCompat="@drawable/newtaskicon" />
 
+    <Button
+        android:id="@+id/viewScheduleButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif"
+        android:onClick="performDailyTask"
+        android:text="@string/viewScheduleButtonStr"
+        android:textSize="30sp"
+        app:backgroundTint="@color/projectRed"
+        app:layout_constraintBottom_toTopOf="@+id/NavigationBar"
+        app:layout_constraintEnd_toEndOf="@+id/newTaskButton"
+        app:layout_constraintStart_toStartOf="@+id/peopleButton"
+        app:layout_constraintTop_toBottomOf="@+id/peopleButton" />
+
     <LinearLayout
         android:id="@+id/NavigationBar"
         android:layout_width="match_parent"

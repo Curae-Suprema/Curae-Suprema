@@ -29,6 +29,7 @@
     <string name="exerciseButtonDescriptor">Exercise button</string>
     <string name="peopleButtonDescriptor">People button</string>
     <string name="newTaskButtonDescriptor">New task button</string>
+    <string name="viewScheduleButtonStr">My Day</string>
 
     <!-- New Task Page Strings -->
     <string name="newTaskPageTitleStr">New Task</string>
@@ -101,9 +102,9 @@
     <string name="settingsLabelStr">Account Settings</string>
     <string name="changeAccountInfoStr">Change Account Information</string>
     <string name="mealsPageLabelStr">Meals</string>
-    <string name="mealQuesitonStr">What did you have today?</string>
+    <string name="mealQuesitonStr">What did/will you have today?</string>
     <string name="mealNameHintStr">Enter meal name here</string>
-    <string name="foodPlateQuestionStr">What was in your meal?</string>
+    <string name="foodPlateQuestionStr">What was/will be in your meal?</string>
     <string name="grainsStr">Grains</string>
     <string name="fruitsStr">Fruits</string>
     <string name="veggiesStr">Vegetables</string>
