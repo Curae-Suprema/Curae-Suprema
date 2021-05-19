@@ -28,6 +28,9 @@ public class NewTask extends AppCompatActivity {
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private static final String TAG = "NewTask";
+    int year;
+    int month;
+    int day;
 
 
     @Override
@@ -57,8 +60,10 @@ public class NewTask extends AppCompatActivity {
 
         mDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                month = month + 1;
+            public void onDateSet(DatePicker datePicker, int yr, int m, int d) {
+                month = m + 1;
+                year = yr;
+                day = d;
                 Log.d(TAG, "onDateSet: mm/dd/yyy: " + month + "/" + day + "/" + year);
                 String date = month + "/" + day + "/" + year;
                 mDisplayDate.setText(date);
@@ -83,7 +88,7 @@ public class NewTask extends AppCompatActivity {
         task.setNotes(notes);
 
         final Controller controller = (Controller) getApplicationContext();
-        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date());
+        String date = new SimpleDateFormat("EEEE, MMMM dd, yyyy", Locale.US).format(new Date(year, month, day));
         if(!name.isEmpty())
             controller.getDay(date).addTask(task);
 
