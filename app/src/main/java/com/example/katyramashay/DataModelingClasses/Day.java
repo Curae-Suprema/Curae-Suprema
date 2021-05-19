@@ -14,7 +14,6 @@ public class Day {
     private final String dateStamp;
 
     //CONSTRUCTOR
-
     /**
      * creates the default constructor
      * assigns the arrayList to be filled with empty strings
