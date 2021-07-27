@@ -1,3 +1,5 @@
+# Curae Suprema
+
 Apps for Good is a group application development project that Mass Academy students complete during D term of junior year. My group consisted of myself, Rama Balagurunath, and Shay Chaudhary. Our Android app, Curae Suprema, provides an elder individual with an easy-to-use tool to monitor their daily tasks and routines, mental and physical health, and medication history. The use of this app in assisted living environments will promote more independence in residents, while also allowing more effective patient care.
 
 It is difficult for older patients to keep track of their medications, behavioral tendencies, and day-to-day health, to show to a doctor or caretaker. This app will provide an easy to navigate user interface for the patient, so that they may view and add to existing data relating to the three previously stated features. Through this app, independence will be promoted by allowing the patient to manage and review important parts of their daily health history and provide day-to-day reports on their own. This app mainly targets an older age group, specifically those who receive care at a nursing home or live on their own.
