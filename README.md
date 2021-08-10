@@ -1,6 +1,6 @@
 # Curae Suprema
 
-Apps for Good is a group application development project that Mass Academy students complete during D term of the MAMS junior year as a part of the Computer Science class. Our group consisted of myself, [Rama Balagurunath](https://github.com/RamaBalagurunath), and [Shay Chaudhary](https://github.com/shayaanc4). Our Android app, Curae Suprema, provides an elder individual with an easy-to-use tool to monitor their daily tasks and routines, mental and physical health, and medication history. The use of this app in assisted living environments will promote more independence in residents, while also allowing more effective patient care.
+Apps for Good is a group application development project that Mass Academy students complete during D term of the MAMS junior year as a part of the Computer Science class. Our group consisted of [Katy Stuparu](https://github.com/kastuparu), [Rama Balagurunath](https://github.com/RamaBalagurunath), and [Shay Chaudhary](https://github.com/shayaanc4). Our Android app, Curae Suprema, provides an elder individual with an easy-to-use tool to monitor their daily tasks and routines, mental and physical health, and medication history. The use of this app in assisted living environments will promote more independence in residents, while also allowing more effective patient care.
 
 ## Executive Summary
 
